@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.30207825032983926 -0.09747452527342972 0.948286585163147 3.705530101409982
-  position 0.9300368159406789 0.37946033661059564 0.893272427957736
+  orientation -0.20685580038505977 0.14490951322328707 0.967580441526412 1.905593381913912
+  position 1.5273415397696692 -4.1720766194660035 2.245179445139859
 }
 TexturedBackground {
 }
@@ -13,6 +13,7 @@ RectangleArena {
   floorSize 2 4
 }
 Robot {
+  translation 0 1.68 0
   rotation 0 1 0 0
   children [
     DEF Body Transform {
@@ -147,7 +148,7 @@ Robot {
   controller "drive_my_robot"
 }
 Solid {
-  translation 0 -0.77 0.25
+  translation 0.09 -0.38 0.25
   scale 5 5 5
   children [
     DEF box_obstacle Shape {
@@ -164,4 +165,102 @@ Solid {
   boundingObject USE box_obstacle
   physics Physics {
   }
+}
+Solid {
+  translation -0.14 -1.37 0.35
+  scale 7 7 7
+  children [
+    DEF box_obstacle Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE box_obstacle
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.73 -0.77 0.25
+  scale 5 5 5
+  children [
+    DEF box_obstacle Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE box_obstacle
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.75 0.59 0.25
+  scale 5 5 5
+  children [
+    DEF box_obstacle Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE box_obstacle
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.29 0.59 0.41
+  scale 8 8 8
+  children [
+    DEF box_obstacle Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE box_obstacle
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.7 -1.7 0
+  scale 3 3 3
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+  name "solid(5)"
 }
