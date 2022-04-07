@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.20685580038505977 0.14490951322328707 0.967580441526412 1.905593381913912
-  position 1.5273415397696692 -4.1720766194660035 2.245179445139859
+  orientation 0.22711001611211118 0.88579018491024 -0.40471815983254267 1.1682271291695692
+  position -2.504274518237132 3.1012992987729557 4.914837923081305
 }
 TexturedBackground {
 }
@@ -16,6 +16,9 @@ Robot {
   translation 0 1.68 0
   rotation 0 1 0 0
   children [
+    Lidar {
+      fieldOfView 6.5
+    }
     DEF Body Transform {
       translation 0 0 0.0415
       children [
@@ -123,23 +126,6 @@ Robot {
       boundingObject USE sensor
       physics Physics {
       }
-    }
-    Lidar {
-      translation 0 0 0.08
-      rotation 0 0 1 -1.5707953071795862
-      scale 0.3 0.3 0.3
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 1 0 1
-            roughness 1
-            metalness 0
-          }
-          geometry Sphere {
-            radius 0.1
-          }
-        }
-      ]
     }
   ]
   boundingObject USE Body
