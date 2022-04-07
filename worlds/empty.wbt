@@ -1,0 +1,167 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.30207825032983926 -0.09747452527342972 0.948286585163147 3.705530101409982
+  position 0.9300368159406789 0.37946033661059564 0.893272427957736
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 4
+}
+Robot {
+  rotation 0 1 0 0
+  children [
+    DEF Body Transform {
+      translation 0 0 0.0415
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.045 0 0.025
+      }
+      device [
+        RotationalMotor {
+          name "motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04500004522150625 1.7946439883004456e-06 0.02500341462512072
+        rotation 0.011836770902868722 -0.9998599900444379 0.011827559466320605 4.71304882045984
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        boundingObject USE wheel
+        physics DEF wheel_physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.045 0 0.025
+      }
+      device [
+        RotationalMotor {
+          name "motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.044999954812926055 2.280973939457304e-06 0.0250030811953577
+        rotation 0.011836770897747482 -0.9998599900435657 0.01182755954518179 4.713048820377304
+        children [
+          USE wheel
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+      }
+    }
+    DEF sensor_1 DistanceSensor {
+      translation 0.02 -0.040016 0.05
+      rotation 0 0 -1 1.048
+      scale 0.1 0.1 0.1
+      children [
+        DEF sensor Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            roughness 1
+            metalness 0
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+      name "sensor_1"
+      boundingObject USE sensor
+      physics Physics {
+      }
+    }
+    DEF sensor_2 DistanceSensor {
+      translation -0.02 -0.039984 0.05
+      rotation 0 0 1 -2.095195307179586
+      scale 0.1 0.1 0.1
+      children [
+        DEF sensor Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            roughness 1
+            metalness 0
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+      name "sensor_2"
+      boundingObject USE sensor
+      physics Physics {
+      }
+    }
+    Lidar {
+      translation 0 0 0.08
+      rotation 0 0 1 -1.5707953071795862
+      scale 0.3 0.3 0.3
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "drive_my_robot"
+}
+Solid {
+  translation 0 -0.77 0.25
+  scale 5 5 5
+  children [
+    DEF box_obstacle Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject USE box_obstacle
+  physics Physics {
+  }
+}
