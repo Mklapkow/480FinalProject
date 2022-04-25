@@ -14,8 +14,7 @@ monteCarlo: has a bunch that should change
 
 import math
 # import random
-
-import cv2
+import cv2, os
 import numpy as np
  
 # from FoxQueue import PriorityQueue
@@ -59,6 +58,7 @@ class WorldMap(object):
 
     def displayMap(self, window = "Map Image"):
         """Make a copy of the original image, and display it."""
+        cv2.imwrite('C:/Dev/image.png', self.currentMapImg)
         cv2.imshow(window, self.currentMapImg)
         cv2.waitKey(20)
 
