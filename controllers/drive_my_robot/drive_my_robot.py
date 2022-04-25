@@ -6,6 +6,7 @@ from controller import Robot,Lidar
 
 robot = Robot()
 TIME_STEP = 64
+nodes = []
   
 ds = []
 dsNames = ['lidar', 'gps']
@@ -28,29 +29,26 @@ for i in range(2):
         
     # LeftObstacleCounter = 0
     # RightObstacleCounter = 0
-    
+robot.step(TIME_STEP)
+curr = gps.getValues()
+print(curr)   
+
+# for node in nodes:
+    # distance = ((((curr[0] - node.getCoords()[0])**2) + ((curr[1]-node.getCoords()[1])**2))) )**0.5)
+    # if distance < shortest_distance or shortest_distance is None:
+        # shortest_distance = distance
+        # shortest_distance_coords = node.getCoords()
+        
+
+# shortest_distance_coords
    
 while robot.step(TIME_STEP) != -1:
     rangeImage = lidar.getRangeImage()
-    curr = gps.getValues()
-    print(curr)
     leftSpeed = 5.0
     rightSpeed = 5.0
-      
+       
+
         
-    # if LeftObstacleCounter > 0:
-        # leftSpeed = -5.0
-        # rightSpeed = 5.0
-        # LeftObstacleCounter -= 10
-    # elif RightObstacleCounter > 0:
-        # leftSpeed = -5.0
-        # rightSpeed = 5.0
-        # RightObstacleCounter -= 10
-    # else:  # read sensors 
-        # if ds[0].getValue() < 950.0:
-            # LeftObstacleCounter = 100
-        # elif ds[1].getValue() < 950.0:
-            # RightObstacleCounter = 100
     
     wheels[0].setVelocity(leftSpeed)
     wheels[1].setVelocity(rightSpeed)
