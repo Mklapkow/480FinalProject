@@ -2,8 +2,13 @@
 WorldInfo {
 }
 Viewpoint {
+<<<<<<< HEAD
   orientation 0.5369023760518109 -0.576598761410204 -0.6158487695288011 4.258496978545843
   position 120.61448971066775 -30.355086271033613 60.02382729583382
+=======
+  orientation 0.2536195031446621 0.12730544771971897 -0.9588902286526527 2.1295739006018213
+  position 58.69150414716262 -21.027552134694574 1.9795403610030338
+>>>>>>> b637d322f34822cfb0157729d41f7085c0136b81
 }
 TexturedBackground {
 }
@@ -180,6 +185,124 @@ DEF Group_floor Group {
       boundingObject USE floor_10
     }
   ]
+}
+Robot {
+  translation 57.95 -22.61 0.52
+  rotation 0 1 0 0
+  scale 10 10 10
+  children [
+    Compass {
+      translation 0 0 0.13
+      children [
+        Solid {
+          children [
+            Compass {
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Cone {
+                    bottomRadius 0.05
+                    height 0.01
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    GPS {
+      translation 0 0 0.08
+      rotation 0 0 1 -3.1415853071795863
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Cylinder {
+            height 0.1
+            radius 0.01
+          }
+        }
+      ]
+    }
+    Lidar {
+      translation 0 0 0.084
+      rotation 0 0 1 -1.5731853071795863
+      fieldOfView 1.57
+      numberOfLayers 1
+    }
+    DEF Body Transform {
+      translation 0 0 0.0415
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.045 0 0.025
+      }
+      device [
+        RotationalMotor {
+          name "motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04500004522150625 1.7946439883005782e-06 0.02500341462512072
+        rotation 0.011836770902868683 -0.9998599900444379 0.011827559466320605 4.71304882045984
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        boundingObject USE wheel
+        physics DEF wheel_physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.045 0 0.025
+      }
+      device [
+        RotationalMotor {
+          name "motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.044999954812926055 2.2809739394574527e-06 0.0250030811953577
+        rotation 0.01183677089774744 -0.9998599900435657 0.01182755954518179 4.713048820377304
+        children [
+          USE wheel
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "drive_my_robot"
 }
 DEF Group_wall Group {
   children [
