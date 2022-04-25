@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.3653741943650254 0.4319624393255226 -0.8245666432157274 1.515687465923689
-  position 32.0859901477145 94.94912999701783 116.57426568087872
+  orientation 0.3138245850457666 0.12723477280672674 -0.9409173409017783 2.3209422212671247
+  position 149.26903931827553 78.67456407431406 93.2296071683781
 }
 TexturedBackground {
 }
@@ -1286,7 +1286,7 @@ Group {
       name "solid(114)"
       boundingObject USE wall_65
     }
-    Solid {
+    DEF wall_66 Solid {
       translation 116.4 -17.92 2
       rotation 0 0 1 1.5708
       children [
@@ -1295,14 +1295,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_66 Box {
             size 7 0.3 3
           }
         }
       ]
       name "solid(108)"
+      boundingObject USE wall_66
     }
-    Solid {
+    DEF wall_67 Solid {
       translation 112 -17.92 2
       rotation 0 0 1 1.5708
       children [
@@ -1311,14 +1312,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_67 Box {
             size 7 0.3 3
           }
         }
       ]
       name "solid(119)"
+      boundingObject USE wall_67
     }
-    Solid {
+    DEF wall_68 Solid {
       translation 95.75 -17.92 2
       rotation 0 0 1 1.5708
       children [
@@ -1327,14 +1329,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_68 Box {
             size 7 0.3 3
           }
         }
       ]
       name "solid(120)"
+      boundingObject USE wall_68
     }
-    Solid {
+    DEF wall_69 Solid {
       translation 91.86 -17.92 2
       rotation 0 0 1 1.5708
       children [
@@ -1343,14 +1346,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_69 Box {
             size 7 0.3 3
           }
         }
       ]
       name "solid(121)"
+      boundingObject USE wall_69
     }
-    Solid {
+    DEF wall_70 Solid {
       translation 85.27 -15.32 2
       rotation 0 0 1 1.5708
       children [
@@ -1359,14 +1363,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_70 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(135)"
+      boundingObject USE wall_70
     }
-    Solid {
+    DEF wall_71 Solid {
       translation 82.94 -15.32 2
       rotation 0 0 1 1.5708
       children [
@@ -1375,14 +1380,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_71 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(136)"
+      boundingObject USE wall_71
     }
-    Solid {
+    DEF wall_72 Solid {
       translation 78.97 -15.32 2
       rotation 0 0 1 1.5708
       children [
@@ -1391,14 +1397,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_72 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(137)"
+      boundingObject USE wall_72
     }
-    Solid {
+    DEF wall_73 Solid {
       translation 74.46 -17.34 2
       rotation 0 0 1 1.5708
       children [
@@ -1407,14 +1414,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_73 Box {
             size 5.5 0.3 3
           }
         }
       ]
       name "solid(138)"
+      boundingObject USE wall_73
     }
-    Solid {
+    DEF wall_74 Solid {
       translation 88.18 -14.75 2
       rotation 0 0 1 1.5708
       children [
@@ -1423,14 +1431,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_74 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(139)"
+      boundingObject USE wall_74
     }
-    Solid {
+    DEF wall_75 Solid {
       translation 115.57 -7.34999 2
       rotation 0 0 1 1.5708
       children [
@@ -1439,14 +1448,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_75 Box {
             size 10.3 0.3 3
           }
         }
       ]
       name "solid(74)"
+      boundingObject USE wall_75
     }
-    Solid {
+    DEF wall_76 Solid {
       translation 127.58 -11.12 2
       rotation 0 0 1 1.5708
       children [
@@ -1455,14 +1465,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_76 Box {
             size 14 0.3 3
           }
         }
       ]
       name "solid(104)"
+      boundingObject USE wall_76
     }
-    Solid {
+    DEF wall_77 Solid {
       translation 127.48 -25.34 2
       rotation 0 0 1 1.5708
       children [
@@ -1471,14 +1482,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_77 Box {
             size 11 0.3 3
           }
         }
       ]
       name "solid(105)"
+      boundingObject USE wall_77
     }
-    Solid {
+    DEF wall_78 Solid {
       translation 111.85 -7.34999 2
       rotation 0 0 1 1.5708
       children [
@@ -1487,14 +1499,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_78 Box {
             size 10.3 0.3 3
           }
         }
       ]
       name "solid(75)"
+      boundingObject USE wall_78
     }
-    Solid {
+    DEF wall_79 Solid {
       translation 100.96 -7.36999 2
       rotation 0 0 1 1.5708
       children [
@@ -1503,14 +1516,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_79 Box {
             size 10.3 0.3 3
           }
         }
       ]
       name "solid(76)"
+      boundingObject USE wall_79
     }
-    Solid {
+    DEF wall_80 Solid {
       translation 89.86 -7.23999 2
       rotation 0 0 1 1.5708
       children [
@@ -1519,14 +1533,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_80 Box {
             size 10.2 0.3 3
           }
         }
       ]
       name "solid(77)"
+      boundingObject USE wall_80
     }
-    Solid {
+    DEF wall_81 Solid {
       translation 10.13 7.57 2
       rotation 0 0 1 1.5708
       children [
@@ -1535,14 +1550,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_81 Box {
             size 3 0.3 3
           }
         }
       ]
       name "solid(21)"
+      boundingObject USE wall_81
     }
-    Solid {
+    DEF wall_82 Solid {
       translation 12.75 4.32 2
       rotation 0 0 1 1.5708
       children [
@@ -1551,14 +1567,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_82 Box {
             size 3 0.3 3
           }
         }
       ]
       name "solid(28)"
+      boundingObject USE wall_82
     }
-    Solid {
+    DEF wall_83 Solid {
       translation 12.64 10.36 2
       rotation 0 0 1 1.5708
       children [
@@ -1567,14 +1584,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_83 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(23)"
+      boundingObject USE wall_83
     }
-    Solid {
+    DEF wall_84 Solid {
       translation 12.64 8.11 2
       rotation 0 0 1 1.5708
       children [
@@ -1583,14 +1601,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_84 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(24)"
+      boundingObject USE wall_84
     }
-    Solid {
+    DEF wall_85 Solid {
       translation 12.73 6.41 2
       rotation 0 0 1 1.5708
       children [
@@ -1599,14 +1618,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_85 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(25)"
+      boundingObject USE wall_85
     }
-    Solid {
+    DEF wall_86 Solid {
       translation 2.73998 4.57 2
       rotation 0 0 1 1.5708
       children [
@@ -1615,14 +1635,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_86 Box {
             size 3 0.3 3
           }
         }
       ]
       name "solid(20)"
+      boundingObject USE wall_86
     }
-    Solid {
+    DEF wall_87 Solid {
       translation 12.81 -0.2 2
       rotation 0 0 1 1.5708
       children [
@@ -1631,14 +1652,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_87 Box {
             size 3 0.3 3
           }
         }
       ]
       name "solid(29)"
+      boundingObject USE wall_87
     }
-    Solid {
+    DEF wall_88 Solid {
       translation 12.81 -4.07 2
       rotation 0 0 1 1.5708
       children [
@@ -1647,14 +1669,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_88 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(34)"
+      boundingObject USE wall_88
     }
-    Solid {
+    DEF wall_89 Solid {
       translation 12.81 -6.89 2
       rotation 0 0 1 1.5708
       children [
@@ -1663,14 +1686,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_89 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(35)"
+      boundingObject USE wall_89
     }
-    Solid {
+    DEF wall_90 Solid {
       translation 12.81 -10.05 2
       rotation 0 0 1 1.5708
       children [
@@ -1679,14 +1703,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_90 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(36)"
+      boundingObject USE wall_90
     }
-    Solid {
+    DEF wall_91 Solid {
       translation 10.81 -17.14 2
       rotation 0 0 1 1.5708
       children [
@@ -1695,14 +1720,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_91 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(229)"
+      boundingObject USE wall_91
     }
-    Solid {
+    DEF wall_92 Solid {
       translation 12.91 -18.95 2
       rotation 0 0 1 1.5708
       children [
@@ -1711,14 +1737,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_92 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(232)"
+      boundingObject USE wall_92
     }
-    Solid {
+    DEF wall_93 Solid {
       translation 14.94 -17.14 2
       rotation 0 0 1 1.5708
       children [
@@ -1727,14 +1754,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_93 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(230)"
+      boundingObject USE wall_93
     }
-    Solid {
+    DEF wall_94 Solid {
       translation 12.81 -12.67 2
       rotation 0 0 1 1.5708
       children [
@@ -1743,14 +1771,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_94 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(37)"
+      boundingObject USE wall_94
     }
-    Solid {
+    DEF wall_95 Solid {
       translation 0.0700486 -11.85 2
       rotation 0 0 1 1.5708
       children [
@@ -1759,14 +1788,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_95 Box {
             size 4 0.3 3
           }
         }
       ]
       name "solid(18)"
+      boundingObject USE wall_95
     }
-    Solid {
+    DEF wall_96 Solid {
       translation 0.0700715 -18.14 2
       rotation 0 0 1 1.5708
       children [
@@ -1775,14 +1805,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_96 Box {
             size 4 0.3 3
           }
         }
       ]
       name "solid(30)"
+      boundingObject USE wall_96
     }
-    Solid {
+    DEF wall_97 Solid {
       translation -13.9399 -18.14 2
       rotation 0 0 1 1.5708
       children [
@@ -1791,14 +1822,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_97 Box {
             size 4 0.3 3
           }
         }
       ]
       name "solid(199)"
+      boundingObject USE wall_97
     }
-    Solid {
+    DEF wall_98 Solid {
       translation -11.1699 -29.92 2
       rotation 0 0 1 1.5708
       children [
@@ -1807,14 +1839,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_98 Box {
             size 5 0.3 3
           }
         }
       ]
       name "solid(214)"
+      boundingObject USE wall_98
     }
-    Solid {
+    DEF wall_98 Solid {
       translation 0.0701001 -26.04 2
       rotation 0 0 1 1.5708
       children [
@@ -1823,14 +1856,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_98 Box {
             size 8 0.3 3
           }
         }
       ]
       name "solid(196)"
+      boundingObject USE wall_98
     }
-    Solid {
+    DEF wall_99 Solid {
       translation -15.2899 -25.49 2
       rotation 0 0 1 1.5708
       children [
@@ -1839,14 +1873,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_99 Box {
             size 22 0.3 3
           }
         }
       ]
       name "solid(257)"
+      boundingObject USE wall_99
     }
-    Solid {
+    DEF wall_100 Solid {
       translation -13.9899 -27.45 2
       rotation 0 0 1 1.5708
       children [
@@ -1855,14 +1890,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_100 Box {
             size 10 0.3 3
           }
         }
       ]
       name "solid(211)"
+      boundingObject USE wall_100
     }
-    Solid {
+    DEF wall_101 Solid {
       translation 0.0701201 -31.92 2
       rotation 0 0 1 1.5708
       children [
@@ -1871,14 +1907,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_101 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(197)"
+      boundingObject USE wall_101
     }
-    Solid {
+    DEF wall_102 Solid {
       translation 0.130127 -33.59 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -1887,14 +1924,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_102 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(255)"
+      boundingObject USE wall_102
     }
-    Solid {
+    DEF wall_103 Solid {
       translation -1.96988 -35.9 2
       rotation 0 0 1 1.5708
       children [
@@ -1903,14 +1941,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_103 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(253)"
+      boundingObject USE wall_103
     }
-    Solid {
+    DEF wall_104 Solid {
       translation 3.68012 -29.77 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -1919,14 +1958,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_104 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(219)"
+      boundingObject USE wall_104
     }
-    Solid {
+    DEF wall_105 Solid {
       translation 4.03012 -31.71 2
       rotation 0 0 1 -1.5707953071795862
       children [
@@ -1935,14 +1975,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_105 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(220)"
+      boundingObject USE wall_105
     }
-    Solid {
+    DEF wall_106 Solid {
       translation 0.73012 -34.43 2
       rotation 0 0 1 -1.5707953071795862
       children [
@@ -1951,14 +1992,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_106 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(254)"
+      boundingObject USE wall_106
     }
-    Solid {
+    DEF wall_107 Solid {
       translation 41.4001 -30.62 2
       rotation 0 0 -0.9999999999999999 1.5707953071795862
       children [
@@ -1967,14 +2009,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_107 Box {
             size 3 0.3 3
           }
         }
       ]
       name "solid(223)"
+      boundingObject USE wall_107
     }
-    Solid {
+    DEF wall_108 Solid {
       translation -5.22989 -16.65 2
       rotation 0 0 1 1.5708
       children [
@@ -1983,14 +2026,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_108 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(202)"
+      boundingObject USE wall_108
     }
-    Solid {
+    DEF wall_109 Solid {
       translation -8.95989 -16.65 2
       rotation 0 0 1 1.5708
       children [
@@ -1999,14 +2043,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_109 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(203)"
+      boundingObject USE wall_109
     }
-    Solid {
+    DEF wall_110 Solid {
       translation -8.95989 -19.35 2
       rotation 0 0 1 1.5708
       children [
@@ -2015,14 +2060,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_110 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(204)"
+      boundingObject USE wall_110
     }
-    Solid {
+    DEF wall_111 Solid {
       translation -12.5299 -20.46 2
       rotation 0 0 1 1.5708
       children [
@@ -2031,14 +2077,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_111 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(208)"
+      boundingObject USE wall_111
     }
-    Solid {
+    DEF wall_112 Solid {
       translation -12.5299 -22.25 2
       rotation 0 0 1 1.5708
       children [
@@ -2047,14 +2094,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_112 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(209)"
+      boundingObject USE wall_112
     }
-    Solid {
+    DEF wall_113 Solid {
       translation -8.61989 -17.28 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -2063,14 +2111,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_113 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(206)"
+      boundingObject USE wall_113
     }
-    Solid {
+    DEF wall_114 Solid {
       translation -13.3499 -22.6 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -2079,14 +2128,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_114 Box {
             size 1.5 0.3 3
           }
         }
       ]
       name "solid(210)"
+      boundingObject USE wall_114
     }
-    Solid {
+    DEF wall_115 Solid {
       translation -5.57989 -17.28 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -2095,14 +2145,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_115 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(207)"
+      boundingObject USE wall_115
     }
-    Solid {
+    DEF wall_116 Solid {
       translation 12.8901 -18.04 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -2111,14 +2162,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_116 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(231)"
+      boundingObject USE wall_116
     }
-    Solid {
+    DEF wall_117 Solid {
       translation -5.16989 -19.35 2
       rotation 0 0 1 1.5708
       children [
@@ -2127,14 +2179,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_117 Box {
             size 1 0.3 3
           }
         }
       ]
       name "solid(205)"
+      boundingObject USE wall_117
     }
-    Solid {
+    DEF wall_118 Solid {
       translation 2.86005 -11.39 2
       rotation 0 0 1 1.5708
       children [
@@ -2143,14 +2196,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_118 Box {
             size 4 0.3 3
           }
         }
       ]
       name "solid(42)"
+      boundingObject USE wall_118
     }
-    Solid {
+    DEF wall_119 Solid {
       translation 0.0700162 -3.26 2
       rotation 0 0 1 1.5708
       children [
@@ -2159,14 +2213,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_119 Box {
             size 9 0.3 3
           }
         }
       ]
       name "solid(11)"
+      boundingObject USE wall_119
     }
-    Solid {
+    DEF wall_120 Solid {
       translation -13.97 -11.12 2
       rotation 0 0 1 1.5708
       children [
@@ -2175,14 +2230,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_120 Box {
             size 5 0.3 3
           }
         }
       ]
       name "solid(16)"
+      boundingObject USE wall_120
     }
-    Solid {
+    DEF wall_121 Solid {
       translation 1.65999 3.04 2
       rotation 0 0 1 1.5708
       children [
@@ -2191,14 +2247,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_121 Box {
             size 0.3 3.5 3
           }
         }
       ]
       name "solid(10)"
+      boundingObject USE wall_121
     }
-    Solid {
+    DEF wall_122 Solid {
       translation -2.59 -16.3 2
       rotation 0 0 1 1.5708
       children [
@@ -2207,14 +2264,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_122 Box {
             size 0.3 5 3
           }
         }
       ]
       name "solid(195)"
+      boundingObject USE wall_122
     }
-    Solid {
+    DEF wall_123 Solid {
       translation -3.04 -20 2
       rotation 0 0 1 1.5708
       children [
@@ -2223,14 +2281,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_123 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(201)"
+      boundingObject USE wall_123
     }
-    Solid {
+    DEF wall_124 Solid {
       translation -11.59 -16.3 2
       rotation 0 0 1 1.5708
       children [
@@ -2239,14 +2298,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_124 Box {
             size 0.3 5 3
           }
         }
       ]
       name "solid(198)"
+      boundingObject USE wall_124
     }
-    Solid {
+    DEF wall_125 Solid {
       translation -10.79 -20 2
       rotation 0 0 1 1.5708
       children [
@@ -2255,14 +2315,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_125 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(200)"
+      boundingObject USE wall_125
     }
-    Solid {
+    DEF wall_126 Solid {
       translation 8.84 -0.540002 2
       rotation 0 0 1 1.5708
       children [
@@ -2271,14 +2332,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_126 Box {
             size 0.3 7.7 3
           }
         }
       ]
       name "solid(194)"
+      boundingObject USE wall_126
     }
-    Solid {
+    DEF wall_127 Solid {
       translation 19.53 -7.21996 2
       rotation 0 0 1 1.5708
       children [
@@ -2287,14 +2349,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_127 Box {
             size 0.3 8.5 3
           }
         }
       ]
       name "solid(51)"
+      boundingObject USE wall_127
     }
-    Solid {
+    DEF wall_128 Solid {
       translation 45.86 -7.21994 2
       rotation 0 0 1 1.5708
       children [
@@ -2303,14 +2366,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_128 Box {
             size 0.3 8.5 3
           }
         }
       ]
       name "solid(61)"
+      boundingObject USE wall_128
     }
-    Solid {
+    DEF wall_129 Solid {
       translation 44.08 -12.3399 2
       rotation 0 0 1 1.5708
       children [
@@ -2319,14 +2383,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_129 Box {
             size 0.3 5 3
           }
         }
       ]
       name "solid(65)"
+      boundingObject USE wall_129
     }
-    Solid {
+    DEF wall_130 Solid {
       translation 57.71 -8.3299 2
       rotation 0 0 1 1.5708
       children [
@@ -2335,14 +2400,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_130 Box {
             size 0.3 5 3
           }
         }
       ]
       name "solid(66)"
+      boundingObject USE wall_130
     }
-    Solid {
+    DEF wall_131 Solid {
       translation 51.4 -8.3299 2
       rotation 0 0 1 1.5708
       children [
@@ -2351,14 +2417,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_131 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(67)"
+      boundingObject USE wall_131
     }
-    Solid {
+    DEF wall_132 Solid {
       translation 63.72 -8.3299 2
       rotation 0 0 1 1.5708
       children [
@@ -2367,14 +2434,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_132 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(68)"
+      boundingObject USE wall_132
     }
-    Solid {
+    DEF wall_133 Solid {
       translation 49.42 -12.3699 2
       rotation 0 0 1 1.5708
       children [
@@ -2383,14 +2451,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_133 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(69)"
+      boundingObject USE wall_133
     }
-    Solid {
+    DEF wall_134 Solid {
       translation 65.95 -12.3699 2
       rotation 0 0 1 1.5708
       children [
@@ -2399,14 +2468,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_134 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(70)"
+      boundingObject USE wall_134
     }
-    Solid {
+    DEF wall_135 Solid {
       translation 72.42 -12.3699 2
       rotation 0 0 1 1.5708
       children [
@@ -2415,14 +2485,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_135 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(72)"
+      boundingObject USE wall_135
     }
-    Solid {
+    DEF wall_136 Solid {
       translation 69.25 -7.2199 2
       rotation 0 0 1 1.5708
       children [
@@ -2431,14 +2502,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_136 Box {
             size 0.3 8.5 3
           }
         }
       ]
       name "solid(62)"
+      boundingObject USE wall_136
     }
-    Solid {
+    DEF wall_137 Solid {
       translation 71.91 -36.5399 2
       rotation 0 0 1 1.5708
       children [
@@ -2447,14 +2519,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_137 Box {
             size 0.3 7 3
           }
         }
       ]
       name "solid(190)"
+      boundingObject USE wall_137
     }
-    Solid {
+    DEF wall_138 Solid {
       translation 62.86 -36.5799 2
       rotation 0 0 1 1.5708
       children [
@@ -2463,14 +2536,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_138 Box {
             size 0.3 7 3
           }
         }
       ]
       name "solid(191)"
+      boundingObject USE wall_138
     }
-    Solid {
+    DEF wall_139 Solid {
       translation 53.82 -36.5599 2
       rotation 0 0 1 1.5708
       children [
@@ -2479,14 +2553,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_139 Box {
             size 0.3 7 3
           }
         }
       ]
       name "solid(192)"
+      boundingObject USE wall_139
     }
-    Solid {
+    DEF wall_140 Solid {
       translation 44.57 -36.5599 2
       rotation 0 0 1 1.5708
       children [
@@ -2495,14 +2570,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_140 Box {
             size 0.3 7 3
           }
         }
       ]
       name "solid(193)"
+      boundingObject USE wall_140
     }
-    Solid {
+    DEF wall_141 Solid {
       translation 75.62 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2511,14 +2587,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_141 Box {
             size 0.3 4 3
           }
         }
       ]
       name "solid(79)"
+      boundingObject USE wall_141
     }
-    Solid {
+    DEF wall_142 Solid {
       translation 82.4 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2527,14 +2604,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_142 Box {
             size 0.3 4 3
           }
         }
       ]
       name "solid(80)"
+      boundingObject USE wall_142
     }
-    Solid {
+    DEF wall_143 Solid {
       translation 75.83 -14.4399 2
       rotation 0 0 1 1.5708
       children [
@@ -2543,14 +2621,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_143 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(131)"
+      boundingObject USE wall_143
     }
-    Solid {
+    DEF wall_144 Solid {
       translation 79.86 -14.3899 2
       rotation 0 0 1 1.5708
       children [
@@ -2559,14 +2638,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_144 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(132)"
+      boundingObject USE wall_144
     }
-    Solid {
+    DEF wall_145 Solid {
       translation 82.87 -14.3899 2
       rotation 0 0 1 1.5708
       children [
@@ -2575,14 +2655,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_145 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(133)"
+      boundingObject USE wall_145
     }
-    Solid {
+    DEF wall_146 Solid {
       translation 86.38 -14.3899 2
       rotation 0 0 1 1.5708
       children [
@@ -2591,14 +2672,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_146 Box {
             size 0.3 4 3
           }
         }
       ]
       name "solid(134)"
+      boundingObject USE wall_146
     }
-    Solid {
+    DEF wall_147 Solid {
       translation 77 -23.7299 2
       rotation 0 0 1 1.5708
       children [
@@ -2607,14 +2689,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_147 Box {
             size 0.3 5 3
           }
         }
       ]
       name "solid(112)"
+      boundingObject USE wall_147
     }
-    Solid {
+    DEF wall_148 Solid {
       translation 106.84 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2623,14 +2706,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_148 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(84)"
+      boundingObject USE wall_148
     }
-    Solid {
+    DEF wall_149 Solid {
       translation 117.47 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2639,14 +2723,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_149 Box {
             size 0.3 3.5 3
           }
         }
       ]
       name "solid(92)"
+      boundingObject USE wall_149
     }
-    Solid {
+    DEF wall_150 Solid {
       translation 114.16 -17.3699 2
       rotation 0 0 1 1.5708
       children [
@@ -2655,14 +2740,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_150 Box {
             size 0.3 4.5 3
           }
         }
       ]
       name "solid(123)"
+      boundingObject USE wall_150
     }
-    Solid {
+    DEF wall_151 Solid {
       translation 114.83 -21.3199 2
       rotation 0 0 1 1.5708
       children [
@@ -2671,14 +2757,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_151 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(124)"
+      boundingObject USE wall_151
     }
-    Solid {
+    DEF wall_152 Solid {
       translation 124.69 -14.8199 2
       rotation 0 0 1 1.5708
       children [
@@ -2687,14 +2774,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_152 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(96)"
+      boundingObject USE wall_152
     }
-    Solid {
+    DEF wall_153 Solid {
       translation 123.49 -4.2799 2
       rotation 0 0 1 1.5708
       children [
@@ -2703,14 +2791,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_153 Box {
             size 0.3 8 3
           }
         }
       ]
       name "solid(87)"
+      boundingObject USE wall_153
     }
-    Solid {
+    DEF wall_154 Solid {
       translation 123.49 -17.2799 2
       rotation 0 0 1 1.5708
       children [
@@ -2719,14 +2808,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_154 Box {
             size 0.3 8 3
           }
         }
       ]
       name "solid(97)"
+      boundingObject USE wall_154
     }
-    Solid {
+    DEF wall_155 Solid {
       translation 123.49 -20.1599 2
       rotation 0 0 1 1.5708
       children [
@@ -2735,14 +2825,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_155 Box {
             size 0.3 8 3
           }
         }
       ]
       name "solid(99)"
+      boundingObject USE wall_155
     }
-    Solid {
+    DEF wall_156 Solid {
       translation 123.49 -25.2699 2
       rotation 0 0 1 1.5708
       children [
@@ -2751,14 +2842,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_156 Box {
             size 0.3 8 3
           }
         }
       ]
       name "solid(101)"
+      boundingObject USE wall_156
     }
-    Solid {
+    DEF wall_157 Solid {
       translation 123.49 -30.7299 2
       rotation 0 0 1 1.5708
       children [
@@ -2767,14 +2859,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_157 Box {
             size 0.3 8 3
           }
         }
       ]
       name "solid(103)"
+      boundingObject USE wall_157
     }
-    Solid {
+    DEF wall_158 Solid {
       translation 89.42 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2783,14 +2876,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_158 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(81)"
+      boundingObject USE wall_158
     }
-    Solid {
+    DEF wall_159 Solid {
       translation 96.67 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2799,14 +2893,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_159 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(82)"
+      boundingObject USE wall_159
     }
-    Solid {
+    DEF wall_160 Solid {
       translation 98.19 -23.8199 2
       rotation 0 0 1 1.5708
       children [
@@ -2815,14 +2910,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_160 Box {
             size 0.3 10 3
           }
         }
       ]
       name "solid(116)"
+      boundingObject USE wall_160
     }
-    Solid {
+    DEF wall_161 Solid {
       translation 104.44 -14.6299 2
       rotation 0 0 1 1.5708
       children [
@@ -2831,14 +2927,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_161 Box {
             size 0.3 15 3
           }
         }
       ]
       name "solid(125)"
+      boundingObject USE wall_161
     }
-    Solid {
+    DEF wall_162 Solid {
       translation 104.44 -21.2999 2
       rotation 0 0 1 1.5708
       children [
@@ -2847,14 +2944,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_162 Box {
             size 0.3 15 3
           }
         }
       ]
       name "solid(126)"
+      boundingObject USE wall_162
     }
-    Solid {
+    DEF wall_163 Solid {
       translation 109.31 -23.8199 2
       rotation 0 0 1 1.5708
       children [
@@ -2863,14 +2961,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_163 Box {
             size 0.3 10 3
           }
         }
       ]
       name "solid(117)"
+      boundingObject USE wall_163
     }
-    Solid {
+    DEF wall_164 Solid {
       translation 86.07 -23.8399 2
       rotation 0 0 1 1.5708
       children [
@@ -2879,14 +2978,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_164 Box {
             size 0.3 10 3
           }
         }
       ]
       name "solid(115)"
+      boundingObject USE wall_164
     }
-    Solid {
+    DEF wall_165 Solid {
       translation 82.28 -21.3299 2
       rotation 0 0 1 1.5708
       children [
@@ -2895,14 +2995,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_165 Box {
             size 0.3 16 3
           }
         }
       ]
       name "solid(129)"
+      boundingObject USE wall_165
     }
-    Solid {
+    DEF wall_166 Solid {
       translation 81.4 -16.3099 2
       rotation 0 0 1 1.5708
       children [
@@ -2911,14 +3012,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_166 Box {
             size 0.3 14 3
           }
         }
       ]
       name "solid(130)"
+      boundingObject USE wall_166
     }
-    Solid {
+    DEF wall_167 Solid {
       translation 101.59 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2927,14 +3029,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_167 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(83)"
+      boundingObject USE wall_167
     }
-    Solid {
+    DEF wall_168 Solid {
       translation 112.47 -12.3499 2
       rotation 0 0 1 1.5708
       children [
@@ -2943,14 +3046,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_168 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(85)"
+      boundingObject USE wall_168
     }
-    Solid {
+    DEF wall_169 Solid {
       translation 113.15 -14.5899 2
       rotation 0 0 1 1.5708
       children [
@@ -2959,14 +3063,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_169 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(122)"
+      boundingObject USE wall_169
     }
-    Solid {
+    DEF wall_170 Solid {
       translation 118.43 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -2975,14 +3080,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_170 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(168)"
+      boundingObject USE wall_170
     }
-    Solid {
+    DEF wall_171 Solid {
       translation 112.6 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -2991,14 +3097,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_171 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(169)"
+      boundingObject USE wall_171
     }
-    Solid {
+    DEF wall_172 Solid {
       translation 110.57 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3007,14 +3114,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_172 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(170)"
+      boundingObject USE wall_172
     }
-    Solid {
+    DEF wall_173 Solid {
       translation 104.16 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3023,14 +3131,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_173 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(171)"
+      boundingObject USE wall_173
     }
-    Solid {
+    DEF wall_174 Solid {
       translation 102.15 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3039,14 +3148,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_174 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(172)"
+      boundingObject USE wall_174
     }
-    Solid {
+    DEF wall_175 Solid {
       translation 96.03 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3055,14 +3165,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_175 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(173)"
+      boundingObject USE wall_175
     }
-    Solid {
+    DEF wall_176 Solid {
       translation 94.09 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3071,14 +3182,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_176 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(174)"
+      boundingObject USE wall_176
     }
-    Solid {
+    DEF wall_177 Solid {
       translation 88.86 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3087,14 +3199,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_177 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(175)"
+      boundingObject USE wall_177
     }
-    Solid {
+    DEF wall_178 Solid {
       translation 87.16 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3103,14 +3216,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_178 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(176)"
+      boundingObject USE wall_178
     }
-    Solid {
+    DEF wall_179 Solid {
       translation 81.96 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3119,14 +3233,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_179 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(177)"
+      boundingObject USE wall_179
     }
-    Solid {
+    DEF wall_180 Solid {
       translation 80.02 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3135,14 +3250,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_180 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(178)"
+      boundingObject USE wall_180
     }
-    Solid {
+    DEF wall_181 Solid {
       translation 37.05 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3151,14 +3267,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_181 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(179)"
+      boundingObject USE wall_181
     }
-    Solid {
+    DEF wall_182 Solid {
       translation 35.32 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3167,14 +3284,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_182 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(180)"
+      boundingObject USE wall_182
     }
-    Solid {
+    DEF wall_183 Solid {
       translation 30.54 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3183,14 +3301,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_183 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(181)"
+      boundingObject USE wall_183
     }
-    Solid {
+    DEF wall_184 Solid {
       translation 28.75 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3199,14 +3318,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_184 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(182)"
+      boundingObject USE wall_184
     }
-    Solid {
+    DEF wall_185 Solid {
       translation 23.16 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3215,14 +3335,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_185 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(183)"
+      boundingObject USE wall_185
     }
-    Solid {
+    DEF wall_186 Solid {
       translation 21.4 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3231,14 +3352,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_186 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(184)"
+      boundingObject USE wall_186
     }
-    Solid {
+    DEF wall_187 Solid {
       translation 15.57 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3247,14 +3369,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_187 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(185)"
+      boundingObject USE wall_187
     }
-    Solid {
+    DEF wall_188 Solid {
       translation 13.92 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3263,14 +3386,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_188 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(186)"
+      boundingObject USE wall_188
     }
-    Solid {
+    DEF wall_189 Solid {
       translation 7.57 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3279,14 +3403,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_189 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(187)"
+      boundingObject USE wall_189
     }
-    Solid {
+    DEF wall_190 Solid {
       translation 5.84 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3295,14 +3420,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_190 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(188)"
+      boundingObject USE wall_190
     }
-    Solid {
+    DEF wall_191 Solid {
       translation 0.48 -36.5699 2
       rotation 0 0 1 1.5708
       children [
@@ -3311,14 +3437,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_191 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(189)"
+      boundingObject USE wall_191
     }
-    Solid {
+    DEF wall_192 Solid {
       translation 116.11 -23.7299 2
       rotation 0 0 1 1.5708
       children [
@@ -3327,14 +3454,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_192 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(118)"
+      boundingObject USE wall_192
     }
-    Solid {
+    DEF wall_193 Solid {
       translation 123.14 -9.9099 2
       rotation 0 0 1 1.5708
       children [
@@ -3343,14 +3471,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_193 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(91)"
+      boundingObject USE wall_193
     }
-    Solid {
+    DEF wall_194 Solid {
       translation 120.07 -14.9599 2
       rotation 0 0 1 1.5708
       children [
@@ -3359,14 +3488,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_194 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(95)"
+      boundingObject USE wall_194
     }
-    Solid {
+    DEF wall_195 Solid {
       translation 116.7 -9.9199 2
       rotation 0 0 1 1.5708
       children [
@@ -3375,14 +3505,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_195 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(86)"
+      boundingObject USE wall_195
     }
-    Solid {
+    DEF wall_196 Solid {
       translation 93 -14.4999 2
       rotation 0 0 1 1.5708
       children [
@@ -3391,14 +3522,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_196 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(127)"
+      boundingObject USE wall_196
     }
-    Solid {
+    DEF wall_197 Solid {
       translation 93 -21.1999 2
       rotation 0 0 1 1.5708
       children [
@@ -3407,14 +3539,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_197 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(128)"
+      boundingObject USE wall_197
     }
-    Solid {
+    DEF wall_198 Solid {
       translation 120.5 -9.9199 2
       rotation 0 0 1 1.5708
       children [
@@ -3423,14 +3556,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_198 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(89)"
+      boundingObject USE wall_198
     }
-    Solid {
+    DEF wall_199 Solid {
       translation 126.41 -9.9199 2
       rotation 0 0 1 1.5708
       children [
@@ -3439,14 +3573,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_199 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(90)"
+      boundingObject USE wall_199
     }
-    Solid {
+    DEF wall_200 Solid {
       translation 18.52 -13.57 2
       rotation 0 0 1 1.5708
       children [
@@ -3455,14 +3590,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_200 Box {
             size 0.3 6 3
           }
         }
       ]
       name "solid(55)"
+      boundingObject USE wall_200
     }
-    Solid {
+    DEF wall_201 Solid {
       translation 35.27 -16.29 2
       rotation 0 0 1 1.5708
       children [
@@ -3471,14 +3607,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_201 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(235)"
+      boundingObject USE wall_201
     }
-    Solid {
+    DEF wall_202 Solid {
       translation 39.81 -16.29 2
       rotation 0 0 1 1.5708
       children [
@@ -3487,14 +3624,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_202 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(234)"
+      boundingObject USE wall_202
     }
-    Solid {
+    DEF wall_202 Solid {
       translation 33.26 -13.62 2
       rotation 0 0 1 1.5708
       children [
@@ -3503,14 +3641,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_202 Box {
             size 0.3 10 3
           }
         }
       ]
       name "solid(57)"
+      boundingObject USE wall_202
     }
-    Solid {
+    DEF wall_203 Solid {
       translation 26.46 -25.63 2
       rotation 0 0 1 1.5708
       children [
@@ -3519,14 +3658,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_203 Box {
             size 0.3 5 3
           }
         }
       ]
       name "solid(225)"
+      boundingObject USE wall_203
     }
-    Solid {
+    DEF wall_204 Solid {
       translation 14.83 -25.63 2
       rotation 0 0 1 1.5708
       children [
@@ -3535,14 +3675,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_204 Box {
             size 0.3 12 3
           }
         }
       ]
       name "solid(226)"
+      boundingObject USE wall_204
     }
-    Solid {
+    DEF wall_205 Solid {
       translation 12.56 -32.26 2
       rotation 0 0 1 1.5708
       children [
@@ -3551,14 +3692,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_205 Box {
             size 0.3 19 3
           }
         }
       ]
       name "solid(244)"
+      boundingObject USE wall_205
     }
-    Solid {
+    DEF wall_206 Solid {
       translation 27.27 -32.26 2
       rotation 0 0 1 1.5708
       children [
@@ -3567,14 +3709,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_206 Box {
             size 0.3 4 3
           }
         }
       ]
       name "solid(248)"
+      boundingObject USE wall_206
     }
-    Solid {
+    DEF wall_207 Solid {
       translation 36.06 -32.26 2
       rotation 0 0 1 1.5708
       children [
@@ -3583,14 +3726,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_207 Box {
             size 0.3 11 3
           }
         }
       ]
       name "solid(249)"
+      boundingObject USE wall_207
     }
-    Solid {
+    DEF wall_208 Solid {
       translation 36.46 -25.63 2
       rotation 0 0 1 1.5708
       children [
@@ -3599,14 +3743,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_208 Box {
             size 0.3 10 3
           }
         }
       ]
       name "solid(224)"
+      boundingObject USE wall_208
     }
-    Solid {
+    DEF wall_209 Solid {
       translation 36.76 -19.52 2
       rotation 0 0 1 1.5708
       children [
@@ -3615,14 +3760,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_209 Box {
             size 0.3 9.5 3
           }
         }
       ]
       name "solid(243)"
+      boundingObject USE wall_209
     }
-    Solid {
+    DEF wall_210 Solid {
       translation 24.46 -13.65 2
       rotation 0 0 1 1.5708
       children [
@@ -3631,14 +3777,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_210 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(56)"
+      boundingObject USE wall_210
     }
-    Solid {
+    DEF wall_211 Solid {
       translation 27.43 -22.7 2
       rotation 0 0 1 1.5708
       children [
@@ -3647,14 +3794,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_211 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(240)"
+      boundingObject USE wall_211
     }
-    Solid {
+    DEF wall_212 Solid {
       translation 31.9 -17.9 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -3663,14 +3811,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_212 Box {
             size 0.3 3.5 3
           }
         }
       ]
       name "solid(241)"
+      boundingObject USE wall_212
     }
-    Solid {
+    DEF wall_213 Solid {
       translation 36.72 -17.9 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -3679,14 +3828,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_213 Box {
             size 0.3 3.5 3
           }
         }
       ]
       name "solid(242)"
+      boundingObject USE wall_213
     }
-    Solid {
+    DEF wall_214 Solid {
       translation 4.98 -25.63 2
       rotation 0 0 1 1.5708
       children [
@@ -3695,14 +3845,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_214 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(222)"
+      boundingObject USE wall_214
     }
-    Solid {
+    DEF wall_215 Solid {
       translation -6.24 -35.07 2
       rotation 0 0 1 -3.1415853071795863
       children [
@@ -3711,14 +3862,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_215 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(256)"
+      boundingObject USE wall_215
     }
-    Solid {
+    DEF wall_216 Solid {
       translation -1.29 -27.47 2
       rotation 0 0 1 1.5708
       children [
@@ -3727,14 +3879,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_216 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(213)"
+      boundingObject USE wall_216
     }
-    Solid {
+    DEF wall_217 Solid {
       translation -13.94 -33.66 2
       rotation 0 0 1 1.5708
       children [
@@ -3743,14 +3896,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_217 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(250)"
+      boundingObject USE wall_217
     }
-    Solid {
+    DEF wall_218 Solid {
       translation -0.63 -35.28 2
       rotation 0 0 1 1.5708
       children [
@@ -3759,14 +3913,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_218 Box {
             size 0.3 3 3
           }
         }
       ]
       name "solid(251)"
+      boundingObject USE wall_218
     }
-    Solid {
+    DEF wall_219 Solid {
       translation -13.34 -30.1 2
       rotation 0 0 1 1.5708
       children [
@@ -3775,14 +3930,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_219 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(216)"
+      boundingObject USE wall_219
     }
-    Solid {
+    DEF wall_220 Solid {
       translation -13.34 -32.31 2
       rotation 0 0 1 1.5708
       children [
@@ -3791,14 +3947,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_220 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(217)"
+      boundingObject USE wall_220
     }
-    Solid {
+    DEF wall_221 Solid {
       translation 40.6 -13.65 2
       rotation 0 0 1 1.5708
       children [
@@ -3807,14 +3964,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_221 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(58)"
+      boundingObject USE wall_221
     }
-    Solid {
+    DEF wall_222 Solid {
       translation 32.6 -4.22996 2
       rotation 0 0 1 1.5708
       children [
@@ -3823,14 +3981,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_222 Box {
             size 0.3 18 3
           }
         }
       ]
       name "solid(53)"
+      boundingObject USE wall_222
     }
-    Solid {
+    DEF wall_223 Solid {
       translation 96.44 -2.26981 2
       rotation 0 0 1 1.5708
       children [
@@ -3839,14 +3998,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_223 Box {
             size 0.3 46 3
           }
         }
       ]
       name "solid(78)"
+      boundingObject USE wall_223
     }
-    Solid {
+    DEF wall_224 Solid {
       translation 95.35 -30.7798 2
       rotation 0 0 1 1.5708
       children [
@@ -3855,14 +4015,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_224 Box {
             size 0.3 42 3
           }
         }
       ]
       name "solid(106)"
+      boundingObject USE wall_224
     }
-    Solid {
+    DEF wall_225 Solid {
       translation 59.46 -44.3398 2
       rotation 0 0 1 1.5708
       children [
@@ -3871,14 +4032,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_225 Box {
             size 0.3 120 3
           }
         }
       ]
       name "solid(167)"
+      boundingObject USE wall_225
     }
-    Solid {
+    DEF wall_226 Solid {
       translation 4.65999 3.04 2
       rotation 0 0 1 1.5708
       children [
@@ -3887,14 +4049,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_226 Box {
             size 0.3 0.5 3
           }
         }
       ]
       name "solid(27)"
+      boundingObject USE wall_226
     }
-    Solid {
+    DEF wall_227 Solid {
       translation 5.02999 -6.53 2
       rotation 0 0 -1 -5.307179586466759e-06
       children [
@@ -3903,14 +4066,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_227 Box {
             size 0.3 0.5 3
           }
         }
       ]
       name "solid(33)"
+      boundingObject USE wall_227
     }
-    Solid {
+    DEF wall_228 Solid {
       translation 11.51 8.02 2
       rotation 0 0 1 1.5708
       children [
@@ -3919,14 +4083,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_228 Box {
             size 0.3 2.5 3
           }
         }
       ]
       name "solid(22)"
+      boundingObject USE wall_228
     }
-    Solid {
+    DEF wall_229 Solid {
       translation 11.71 -4.64 2
       rotation 0 0 1 1.5708
       children [
@@ -3935,14 +4100,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_229 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(39)"
+      boundingObject USE wall_229
     }
-    Solid {
+    DEF wall_230 Solid {
       translation 2.75 -7.15 2
       rotation 0 0 1 -3.1415853071795863
       children [
@@ -3951,14 +4117,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_230 Box {
             size 0.3 1 3
           }
         }
       ]
       name "solid(43)"
+      boundingObject USE wall_230
     }
-    Solid {
+    DEF wall_231 Solid {
       translation 11.71 -10.44 2
       rotation 0 0 1 1.5708
       children [
@@ -3967,14 +4134,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_231 Box {
             size 0.3 2 3
           }
         }
       ]
       name "solid(40)"
+      boundingObject USE wall_231
     }
-    Solid {
+    DEF wall_232 Solid {
       translation 7.71 -13.52 2
       rotation 0 0 1 1.5708
       children [
@@ -3983,14 +4151,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_232 Box {
             size 0.3 10 3
           }
         }
       ]
       name "solid(41)"
+      boundingObject USE wall_232
     }
-    Solid {
+    DEF wall_233 Solid {
       translation 7.02 -16.28 2
       rotation 0 0 1 1.5708
       children [
@@ -3999,14 +4168,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_233 Box {
             size 0.3 7.5 3
           }
         }
       ]
       name "solid(227)"
+      boundingObject USE wall_233
     }
-    Solid {
+    DEF wall_234 Solid {
       translation 21.96 -16.28 2
       rotation 0 0 1 1.5708
       children [
@@ -4015,14 +4185,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_234 Box {
             size 0.3 14 3
           }
         }
       ]
       name "solid(228)"
+      boundingObject USE wall_234
     }
-    Solid {
+    DEF wall_235 Solid {
       translation -11.71 -4.1 2
       rotation 0 0 1 1.5708
       children [
@@ -4031,14 +4202,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_235 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(14)"
+      boundingObject USE wall_235
     }
-    Solid {
+    DEF wall_236 Solid {
       translation -11.71 -7.28 2
       rotation 0 0 1 1.5708
       children [
@@ -4047,14 +4219,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_236 Box {
             size 2 0.3 3
           }
         }
       ]
       name "solid(15)"
+      boundingObject USE wall_236
     }
-    Solid {
+    DEF wall_237 Solid {
       translation 8.78 11 2
       children [
         Shape {
@@ -4062,14 +4235,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_237 Box {
             size 8 0.3 3
           }
         }
       ]
       name "solid(6)"
+      boundingObject USE wall_237
     }
-    Solid {
+    DEF wall_238 Solid {
       translation 7.88 5.91 2
       children [
         Shape {
@@ -4077,14 +4251,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_238 Box {
             size 10 0.3 3
           }
         }
       ]
       name "solid(19)"
+      boundingObject USE wall_238
     }
-    Solid {
+    DEF wall_239 Solid {
       translation 7.88 -6.8 2
       children [
         Shape {
@@ -4092,14 +4267,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_239 Box {
             size 10 0.3 3
           }
         }
       ]
       name "solid(32)"
+      boundingObject USE wall_239
     }
-    Solid {
+    DEF wall_240 Solid {
       translation -7.83 3.06 2
       children [
         Shape {
@@ -4107,14 +4283,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_240 Box {
             size 12 0.3 3
           }
         }
       ]
       name "solid(8)"
+      boundingObject USE wall_240
     }
-    Solid {
+    DEF wall_241 Solid {
       translation -7.83 -13.57 2
       children [
         Shape {
@@ -4122,14 +4299,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_241 Box {
             size 12 0.3 3
           }
         }
       ]
       name "solid(212)"
+      boundingObject USE wall_241
     }
-    Solid {
+    DEF wall_242 Solid {
       translation -6.55 -4.12 2
       children [
         Shape {
@@ -4137,14 +4315,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_242 Box {
             size 10 0.3 3
           }
         }
       ]
       name "solid(12)"
+      boundingObject USE wall_242
     }
-    Solid {
+    DEF wall_243 Solid {
       translation -6.55 -7.2 2
       children [
         Shape {
@@ -4152,14 +4331,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_243 Box {
             size 10 0.3 3
           }
         }
       ]
       name "solid(13)"
+      boundingObject USE wall_243
     }
-    Solid {
+    DEF wall_244 Solid {
       translation -8.98 -27.51 2
       children [
         Shape {
@@ -4167,14 +4347,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_244 Box {
             size 10 0.3 3
           }
         }
       ]
       name "solid(17)"
+      boundingObject USE wall_244
     }
-    Solid {
+    DEF wall_245 Solid {
       translation -6.63 -33.67 2
       children [
         Shape {
@@ -4182,14 +4363,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_245 Box {
             size 9 0.3 3
           }
         }
       ]
       name "solid(252)"
+      boundingObject USE wall_245
     }
-    Solid {
+    DEF wall_246 Solid {
       translation -5.55 -32.28 2
       children [
         Shape {
@@ -4197,14 +4379,15 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_246 Box {
             size 11.5 0.3 3
           }
         }
       ]
       name "solid(215)"
+      boundingObject USE wall_246
     }
-    Solid {
+    DEF wall_247 Solid {
       translation -7.93 -36.53 2
       children [
         Shape {
@@ -4212,12 +4395,13 @@ Group {
             roughness 1
             metalness 0
           }
-          geometry Box {
+          geometry DEF wall_247 Box {
             size 15 0.3 3
           }
         }
       ]
       name "solid(258)"
+      boundingObject USE wall_247
     }
   ]
 }
