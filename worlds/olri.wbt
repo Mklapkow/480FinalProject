@@ -2,14 +2,14 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.3138245850457666 0.12723477280672674 -0.9409173409017783 2.3209422212671247
-  position 149.26903931827553 78.67456407431406 93.2296071683781
+  orientation 0.5516838111652204 -0.5861543532894081 -0.5933532224721572 4.216139547269156
+  position 32.25574893937173 -27.411729380787765 68.29046967315622
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
-Group {
+DEF Group_floor Group {
   children [
     DEF floor_1 Solid {
       translation 52.02 -25.25 0
@@ -181,7 +181,7 @@ Group {
     }
   ]
 }
-Group {
+DEF Group_wall Group {
   children [
     DEF wall_1 Solid {
       translation -5.62 11 2
@@ -4143,7 +4143,7 @@ Group {
       boundingObject USE wall_231
     }
     DEF wall_232 Solid {
-      translation 7.71 -13.52 2
+      translation 5.23 -13.52 2
       rotation 0 0 1 1.5708
       children [
         Shape {
@@ -4152,12 +4152,29 @@ Group {
             metalness 0
           }
           geometry DEF wall_232 Box {
-            size 0.3 10 3
+            size 0.3 5 3
           }
         }
       ]
       name "solid(41)"
       boundingObject USE wall_232
+    }
+    DEF wall_248 Solid {
+      translation 11.45 -13.52 2
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            roughness 1
+            metalness 0
+          }
+          geometry DEF wall_248 Box {
+            size 0.3 3 3
+          }
+        }
+      ]
+      name "solid(268)"
+      boundingObject USE wall_248
     }
     DEF wall_233 Solid {
       translation 7.02 -16.28 2
@@ -4402,6 +4419,1183 @@ Group {
       ]
       name "solid(258)"
       boundingObject USE wall_247
+    }
+  ]
+}
+DEF Group_nodes Group {
+  children [
+    DEF road_299B_01 Solid {
+      translation 47.65 -14.9 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(259)"
+    }
+    DEF road_299B_02 Solid {
+      translation 41.43 -14.9 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(260)"
+    }
+    DEF road_299B_03 Solid {
+      translation 13.62 -14.9 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(261)"
+    }
+    DEF room_277 Solid {
+      translation 11.81 -17.65 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(322)"
+    }
+    DEF room_275 Solid {
+      translation 13.95 -17.65 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(323)"
+    }
+    DEF room_277_&_275 Solid {
+      translation 12.75 -21.07 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(324)"
+    }
+    DEF room_262_&_277 Solid {
+      translation 7.19 -25.75 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(325)"
+    }
+    DEF room_263_&_275 Solid {
+      translation 22.33 -25.75 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(326)"
+    }
+    DEF room_27 Solid {
+      translation 25.18 -24.63 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(328)"
+    }
+    DEF room_263 Solid {
+      translation 23.77 -32.24 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(327)"
+    }
+    DEF road_299B_04 Solid {
+      translation 1.5 -14.9 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(262)"
+    }
+    DEF road_299B_05 Solid {
+      translation -14.46 -14.9 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(263)"
+    }
+    DEF room_207 Solid {
+      translation 47.63 -12.63 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(264)"
+    }
+    DEF room_270_01 Solid {
+      translation 39.01 -14.89 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(265)"
+    }
+    DEF room_270_02 Solid {
+      translation 27.38 -14.89 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(266)"
+    }
+    DEF room_272 Solid {
+      translation 22.14 -14.89 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(267)"
+    }
+    DEF room_276_01 Solid {
+      translation 9.09 -14.89 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(269)"
+    }
+    DEF room_287 Solid {
+      translation -1.25 -14.89 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(270)"
+    }
+    DEF road_299B_06 Solid {
+      translation -7.18 -14.89 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(271)"
+    }
+    DEF room_288 Solid {
+      translation -7.18 -18.07 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(272)"
+    }
+    DEF room_288A Solid {
+      translation -9.41 -18.07 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(273)"
+    }
+    DEF room_288B Solid {
+      translation -4.66 -18.07 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(274)"
+    }
+    DEF room_289_01 Solid {
+      translation -7.03 -21.16 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(275)"
+    }
+    DEF room_289_02 Solid {
+      translation -13.36 -21.16 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(276)"
+    }
+    DEF room_289_03 Solid {
+      translation -0.17 -21.16 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(277)"
+    }
+    DEF room_289_&_260 Solid {
+      translation -3.27 -27.56 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(278)"
+    }
+    DEF room_260 Solid {
+      translation 0.16 -30.62 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(279)"
+    }
+    DEF room_262 Solid {
+      translation 3.55 -30.62 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(280)"
+    }
+    DEF road_299c_01 Solid {
+      translation 1.87 -30.62 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(281)"
+    }
+    DEF road_299c_02 Solid {
+      translation 1.52 -21.22 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(282)"
+    }
+    DEF road_299c_03 Solid {
+      translation 1.87 -33.23 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(283)"
+    }
+    DEF road_299c_04 Solid {
+      translation 1.48 -8.45 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(284)"
+    }
+    DEF room_278 Solid {
+      translation 1.48 -5.51 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(285)"
+    }
+    DEF room_280_01 Solid {
+      translation 5.52 -5.51 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(295)"
+    }
+    DEF room_280_02 Solid {
+      translation 12.69 -2.61 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(296)"
+    }
+    DEF room_281_01 Solid {
+      translation 12.69 2.06 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(297)"
+    }
+    DEF room_282 Solid {
+      translation 12.69 7.38 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(299)"
+    }
+    DEF room_283_01 Solid {
+      translation 12.69 9.2 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(300)"
+    }
+    DEF room_283_02 Solid {
+      translation 4.14 10.2 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(301)"
+    }
+    DEF room_281_02 Solid {
+      translation 5.91 0.57 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(298)"
+    }
+    DEF room_278A Solid {
+      translation 3.84 2.84 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(286)"
+    }
+    DEF room_285_01 Solid {
+      translation 0.15 2.07 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(287)"
+    }
+    DEF room_284_&_285 Solid {
+      translation -0.99 3.11 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(302)"
+    }
+    DEF room_283_&_284 Solid {
+      translation 0.05 4.1 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(303)"
+    }
+    DEF room_284 Solid {
+      translation -13.27 9.4 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(304)"
+    }
+    DEF road_299A_01 Solid {
+      translation -14.54 9.4 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(305)"
+    }
+    DEF road_299A_02 Solid {
+      translation -14.54 12.68 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(306)"
+    }
+    DEF road_298A_01 Solid {
+      translation 3.83 12.68 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(314)"
+    }
+    DEF road_298B_01 Solid {
+      translation 13.69 12.68 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(315)"
+    }
+    DEF road_298_02 Solid {
+      translation 13.69 8.51 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(316)"
+    }
+    DEF road_298_03 Solid {
+      translation 13.69 2.14 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(317)"
+    }
+    DEF road_298_04 Solid {
+      translation 13.69 -2.54 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(318)"
+    }
+    DEF room_274B Solid {
+      translation 13.69 -5.23 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(319)"
+    }
+    DEF room_274A Solid {
+      translation 13.69 -8.83 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(320)"
+    }
+    DEF room_274 Solid {
+      translation 13.69 -11.27 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(321)"
+    }
+    DEF road_299A_03 Solid {
+      translation -14.54 -5.61 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(307)"
+    }
+    DEF road_299A_04 Solid {
+      translation -14.54 -21.15 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(308)"
+    }
+    DEF road_299A_05 Solid {
+      translation -14.54 -32.68 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(309)"
+    }
+    DEF road_299A_06 Solid {
+      translation -11.96 -32.68 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(310)"
+    }
+    DEF room_290 Solid {
+      translation -11.96 -30.69 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(312)"
+    }
+    DEF room_299 Solid {
+      translation -11.96 -34.01 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(313)"
+    }
+    DEF room_261 Solid {
+      translation -1.34 -32.98 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(311)"
+    }
+    DEF room_285_02 Solid {
+      translation -12.92 -2.21 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(288)"
+    }
+    DEF room_285_&_280 Solid {
+      translation -1.01 -4.02 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(289)"
+    }
+    DEF room_287_&_280 Solid {
+      translation -1.01 -7.71 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(290)"
+    }
+    DEF room_287_01 Solid {
+      translation -0.24 -8.79 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(291)"
+    }
+    DEF room_276_02 Solid {
+      translation 3.52 -8.79 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(292)"
+    }
+    DEF room_287_02 Solid {
+      translation -12.93 -8.79 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(293)"
+    }
+    DEF room_280 Solid {
+      translation -12.93 -5.8 1.69
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.8
+            height 1.5
+          }
+        }
+      ]
+      name "solid(294)"
     }
   ]
 }
