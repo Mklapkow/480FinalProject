@@ -61,8 +61,8 @@ print(bearing)
    
 while robot.step(TIME_STEP) != -1:
     rangeImage = lidar.getRangeImage()
-    leftSpeed = 5.0
-    rightSpeed = 5.0
+    leftSpeed = 10.0
+    rightSpeed = 10.0
        
 
         
