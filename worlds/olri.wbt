@@ -1,72 +1,21 @@
 #VRML_SIM R2022a utf8
 WorldInfo {
-  contactProperties [
-    ContactProperties {
-    }
-  ]
 }
 Viewpoint {
-  orientation -0.2622438120540931 0.19813527946110174 0.9444419484924463 2.0061280016807124
-  position 61.27883405591244 -34.740665754026615 11.999359987146697
+  orientation -0.39301184742922307 -0.5944238176847368 0.701571103131658 4.84662027996573
+  position 53.596867409348526 -14.370258045009418 13.441959366301276
+  follow "robot"
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
-DEF Group_floor Group {
-  children [
-    DEF floor_1 Floor {
-      translation 52 -25.3 1
-      size 135 22.5
-    }
-    DEF floor_2 Floor {
-      translation 19.5 -10.55 1
-      name "floor(1)"
-      size 8 7
-    }
-    DEF floor_3 Floor {
-      translation 45.8 -10.55 1
-      name "floor(2)"
-      size 8.53 7
-    }
-    DEF floor_4 Floor {
-      translation 69.25 -10.55 1
-      name "floor(3)"
-      size 8.55 7
-    }
-    DEF floor_5 Floor {
-      translation 32.5 -9.06 1
-      name "floor(4)"
-      size 18 10
-    }
-    DEF floor_6 Floor {
-      translation 57.5 -10.05 1
-      name "floor(5)"
-      size 15 8
-    }
-    DEF floor_7 Floor {
-      translation 96.5 -8.01 1
-      name "floor(6)"
-      size 46 12
-    }
-    DEF floor_8 Floor {
-      translation 0 -0.05 1
-      name "floor(7)"
-      size 31 28
-    }
-    DEF floor_9 Floor {
-      translation 59.5 -40.55 1
-      name "floor(8)"
-      size 120 8
-    }
-    DEF floor_10 Floor {
-      translation 123.5 -17.3 1
-      name "floor(9)"
-      size 8 27
-    }
-  ]
+RectangleArena {
+  translation 55 -15 0.5
+  floorSize 150 70
+  floorTileSize 5 5
 }
-DEF Group_wall Group {
+DEF Group_wall Solid {
   children [
     DEF wall_1 Solid {
       translation -5.62 11 2
@@ -7176,8 +7125,8 @@ DEF Group_nodes Group {
   ]
 }
 Robot {
-  translation 58.05000395702285 -21.875192060514355 0.7525408786919731
-  rotation -0.999997000945476 -0.0013321338381831796 0.002055120310597728 0.14145234144026228
+  translation 58.0895 -22.3014 0.63584
+  rotation -0.6598568634182215 -0.5963428765647897 -0.45712590538088993 -0.06128530717958647
   scale 10 10 10
   children [
     Compass {
@@ -7239,7 +7188,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 30.32564158909382
+        position 160.5165767118181
         anchor 0.045 0 0.025
       }
       device [
@@ -7248,8 +7197,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499955636606501 -0.0013872804679630963 0.022752896296006134
-        rotation -0.46777385904196717 0.7501497095375703 -0.46740028891484947 1.853630720922013
+        translation 0.04499955636606501 -0.0019532899164063514 0.02677726775016038
+        rotation 0.7041226217268989 -0.09599434921512805 0.7035598187014396 3.3331477095022675
         children [
           DEF wheel Shape {
             appearance PBRAppearance {
@@ -7270,7 +7219,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 30.326618464553118
+        position 160.22813416611336
         anchor -0.045 0 0.025
       }
       device [
@@ -7279,8 +7228,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.045000444647712357 -0.001386327220090283 0.02275162488404848
-        rotation -0.4674873256205387 0.7505065792064718 -0.4671139849672198 1.8531739697202139
+        translation -0.045000444647712357 -0.0013663937431887293 0.027260544616186103
+        rotation 0.7073763321824277 0.006091275232805644 0.7068108806704759 3.1294011682961274
         children [
           USE wheel
         ]
@@ -7293,5 +7242,5 @@ Robot {
   boundingObject USE Body
   physics Physics {
   }
-  controller "drive_my_robot"
+  controller "my_controller"
 }

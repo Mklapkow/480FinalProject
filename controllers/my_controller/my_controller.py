@@ -10,8 +10,8 @@ for i in range(2):
     wheels[i].setVelocity(0.0)
 
 while robot.step(TIME_STEP) != -1:
-    leftSpeed = 1.0
-    rightSpeed = 1.0
+    leftSpeed = 10.0
+    rightSpeed = 10.0
 
     wheels[0].setVelocity(leftSpeed)
     wheels[1].setVelocity(rightSpeed)
