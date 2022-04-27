@@ -6,7 +6,7 @@ from controller import Robot,Lidar
 import math
 
 robot = Robot()
-TIME_STEP = 64
+TIME_STEP = 1
 nodes = []
  
 #Initialize robot parts
@@ -42,7 +42,7 @@ print(north)
 
 #calculate bearing
 rad = math.atan2(north[0], north[2])
-bearing = (rad - 1.5708) / math.pi *180
+bearing = (rad - 1.5708) / math.pi * 180
 if bearing < 0.0:
     bearing = bearing + 360.0
 
@@ -57,12 +57,18 @@ print(bearing)
         # shortest_distance_coords = node.getCoords()
         
 
-# shortest_distance_coords
+dx = abs(shortest_distance_coords[0] - curr[0])
+dy = abs(shortest_distance_coords[1] - curr[1])
+angle_rad = math.atan2(dy, dx)
+angle_deg = (angle_rad - 1.5708) / math.pi * 180
+
+#NEXT TURN ROBOT TOWARDS THIS ANGLE USING CURRENT ANGLE
+
    
 while robot.step(TIME_STEP) != -1:
     rangeImage = lidar.getRangeImage()
-    leftSpeed = 10.0
-    rightSpeed = 10.0
+    leftSpeed = 5.0
+    rightSpeed = 5.0
        
 
         

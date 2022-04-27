@@ -7131,7 +7131,11 @@ DEF Group_nodes Group {
   ]
 }
 Robot {
+<<<<<<< HEAD
   translation 52.86 -20 0.95
+=======
+  translation 52.86 -20 1.16
+>>>>>>> 55b71090f1dc3072d1dbe3f05aa5076df853ff94
   rotation 0 1 0 0
   scale 10 10 10
   children [
@@ -7204,7 +7208,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.04499955636606501 -0.0019532899164063514 0.02677726775016038
-        rotation 0.7041226217268989 -0.09599434921512805 0.7035598187014396 3.3331477095022675
+        rotation 0.7041226217268992 -0.09599434921512807 0.7035598187014392 3.3331477095022675
         children [
           DEF wheel Shape {
             appearance PBRAppearance {
@@ -7234,8 +7238,13 @@ Robot {
         }
       ]
       endPoint Solid {
+<<<<<<< HEAD
         translation -0.045000444647712357 -0.0013663937431887293 0.027260544616186103
         rotation 0.7073763321824277 0.0060912752328056595 0.7068108806704759 3.1294011682961274
+=======
+        translation -0.04500044464771236 -0.00136639374318861 0.02726054461618603
+        rotation 0.7073763321824278 0.006091275232805661 0.7068108806704759 3.1294011682961274
+>>>>>>> 55b71090f1dc3072d1dbe3f05aa5076df853ff94
         children [
           USE wheel
         ]
@@ -7248,5 +7257,5 @@ Robot {
   boundingObject USE Body
   physics Physics {
   }
-  controller "my_controller"
+  controller "drive_my_robot"
 }
