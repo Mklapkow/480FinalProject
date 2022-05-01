@@ -5,21 +5,23 @@ TIME_STEP = 64
 robot = Robot()
 wheels = []
 wheelsNames = ['motor_1', 'motor_2']
-for i in range(2):
-    wheels.append(robot.getDevice(wheelsNames[i]))
-    wheels[i].setPosition(float('inf'))
-    wheels[i].setVelocity(0.0)
 
-while robot.step(TIME_STEP) != -1:
-    leftSpeed = 10.0
-    rightSpeed = 10.0
+if __name__=="__main__":
+    for i in range(2):
+        wheels.append(robot.getDevice(wheelsNames[i]))
+        wheels[i].setPosition(float('inf'))
+        wheels[i].setVelocity(0.0)
 
-    wheels[0].setVelocity(leftSpeed)
-    wheels[1].setVelocity(rightSpeed)
+    while robot.step(TIME_STEP) != -1:
+        leftSpeed = 10.0
+        rightSpeed = 10.0
 
-dictOfNodes = {"road_299B_01":(47.6,-14.9),"room_200":(58,-16.3), "room_206":(58,-24.9),"road_299B_02":(41.8,-14.9),"road_209":(41.9,-28.2),"road_299B_03":(13.6,-14.9),"room_277":(11.8,-17.6),"room_275":(13.9,-17.6),"room_277_&_275":(12.8,-21.1),"room_262_&_277":(7.19,-25.8),
-"room_263_&_275":(22.3,-25.8),"room_275B":(25.2,-24.6),"room_275A_01":(25.2,-18.8),"room_275A_02":(29.6,-18.8),"room_264_&_273":(30.2,-25.7),"room_264":(29.9,-32.1),"room_273":(30.4,-15.3),"room_271A":(33,-15.3),"room_271":(37.3,-15.3),"room_263":(23.8,-32.2),"road_299B_04":(1.5,-14.9),
-"road_299B_05":(-14.5,-14.9),"room_207":(47.6,-12.6),"room_270_01":(39,-14.9),"room_270_02":(27.4,-14.9),"room_272":(22.1,-14.9),"room_276_01":(9.09,-14.9),"room_287":(-1.25,-14.9),"road_299B_06":(-7.18,-14.9),"room_288":(-7.18,-18.1),"room_288A":(-9.41,-18.1),"room_288B":(-4.66,-18.1),
-"room_289_01":(-7.03,-21.2),"room_289_02":(-13.4,-21.2),"room_289_03":(-0.17,-21.2),"room_289_&_260":(-3.27,-27.6),"room_260":(0.16,-30.6),"room_262":(3.55,-30.6),"road_299c_01":(1.87,-30.6),"road_299c_02":(1.52,-21.2),"road_299c_03":(1.87,-33.2),"room_210":(1.87,-35.5),"room_211":(3.8,-35.5),
-"room_212":(9.46,-35.5),"room_213":(11.8,-35.5),"room_214":(17.1,-35.5),"room_215":(19.6,-35.5),"room_216":(25.4,-35.5),"room_217":(27.5,-35.5),"room_218":(32.2,-35.5),"room_219":(34.2,-35.5)}
+        wheels[0].setVelocity(leftSpeed)
+        wheels[1].setVelocity(rightSpeed)
+
+
+
+
+
+
 

@@ -2,8 +2,9 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.2107077067691501 0.18290033917273174 -0.9602862741071464 1.7942503718923357
-  position 53.02820955373331 10.885543829912036 8.25490133442723
+  orientation 0.576729011522743 -0.5714836225669339 -0.5837723155527109 4.206290253583924
+  position 1.6055651054025937 -8.550241644852669 87.92322191273989
+  follow "four_wheeled_robot"
 }
 TexturedBackground {
 }
@@ -6482,7 +6483,7 @@ DEF Group_nodes Group {
       ]
       name "solid(394)"
     }
-    DEF road_299c_04 Solid {
+    DEF road_299C_04 Solid {
       translation 1.48 -8.45 1.69
       children [
         Shape {
@@ -7131,7 +7132,7 @@ DEF Group_nodes Group {
   ]
 }
 Robot {
-  translation 55.1886 -13.3671 0.914626
+  translation 55.1866 -17.3354 0.800124
   rotation 0.9999847095567778 0.0009994967066661135 -0.005438902369070145 0.028852865724591604
   children [
     DEF Body Transform {
@@ -7209,7 +7210,7 @@ Robot {
   controller "my_controller"
 }
 Robot {
-  translation 51.9815 0.534417 1.47
+  translation 51.9815 -20.8656 0.79
   rotation 0 0 1 -1.5707953071795862
   scale 5 5 5
   children [
