@@ -55,8 +55,6 @@ def firstMove(goal):
 
     while abs(gps.getValues()[0] - target[0]) > 1 and abs(gps.getValues()[1] - target[1]) > 1:
         robot.step(TIME_STEP)
-        print('x: ' + str(abs(gps.getValues()[0] - target[0])))
-        print('y: ' + str(abs(gps.getValues()[1] - target[1])))
         newBearing = findBearing()
         curr = findCoord()
 
@@ -107,6 +105,6 @@ if __name__=="__main__":
     gps = ds[2]
     compass = ds[3]
     robot.step(TIME_STEP)
-    goal = "room_281_01"
+    goal = "room_299B_03"
     firstNode = firstMove(goal)
 
