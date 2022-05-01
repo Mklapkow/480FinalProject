@@ -3,7 +3,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.576729011522743 -0.5714836225669339 -0.5837723155527109 4.206290253583924
-  position 51.97856315997454 -21.065554076639586 5.6570200253963066
+  position 51.79443726231062 -21.495508888103803 25.908312909055404
   follow "four_wheeled_robot"
 }
 TexturedBackground {
@@ -7132,7 +7132,7 @@ DEF Group_nodes Group {
   ]
 }
 Robot {
-  translation 51.9815 -20.8656 0.79
+  translation 51.9515 -20.4156 0.79
   rotation 0 0 1 -1.5707953071795862
   scale 5 5 5
   children [
@@ -7165,7 +7165,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.05 0.06 0
-        rotation 1 0 0 1.5707999999999998
+        rotation 1 -8.204117175131488e-19 8.204147310591908e-19 1.5707999999999998
         children [
           DEF WHEEL Shape {
             appearance PBRAppearance {
@@ -7197,7 +7197,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.05 -0.06 0
-        rotation 1 0 0 1.5707999999999998
+        rotation 1 -6.8550456145516024e-18 6.855070794586381e-18 1.5707999999999998
         children [
           USE WHEEL
         ]
@@ -7219,7 +7219,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.05 0.06 0
-        rotation 1 0 0 1.5707999999999998
+        rotation 1 -3.4638268154987674e-18 3.46383953886847e-18 1.5707999999999998
         children [
           USE WHEEL
         ]
@@ -7241,7 +7241,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.05 -0.06 0
-        rotation 1 0 0 1.5707999999999998
+        rotation 1 6.362018421429515e-18 -6.3620417904709655e-18 1.5707999999999998
         children [
           USE WHEEL
         ]

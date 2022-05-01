@@ -938,30 +938,37 @@ def AStarRoute(graph, startVert, goalVert):
         if nextVert not in visited:
             visited.add(nextVert)
             pred[nextVert] = previous
-            print("--------------")
-            print("Next vertex from queue:", nextVert, "  fCost =", fCost, "  g = ", nextGCost)
+            # print("--------------")
+            # print("Next vertex from queue:", nextVert, "  fCost =", fCost, "  g = ", nextGCost)
             if nextVert == goalVert:
                 return reconstructPath(startVert, goalVert, pred)
             neighbors = graph.getNeighbors(int(nextVert))
-            print("  Adding neighbors to to queue...")
+            # print("  Adding neighbors to to queue...")
             for n in neighbors:
                 neighNode = n[0]
                 edgeCost = n[1]
                 if neighNode not in visited:
                     gCost = nextGCost + edgeCost
                     hCost = heuristicDist(startVert, goalVert)
-                    print("    Node", neighNode, "From", nextVert)
-                    print("    G cost =", gCost, 'H cost =', hCost, "F cost = ", gCost + hCost)
+                    # print("    Node", neighNode, "From", nextVert)
+                    # print("    G cost =", gCost, 'H cost =', hCost, "F cost = ", gCost + hCost)
                     q.insert((neighNode, nextVert, gCost), gCost + hCost)
-    print(visited)
+    # print(visited)
     return [] # "NO PATH"
 
 
 
-def pathFinder(self, startVert, goalVert):
+def pathFinder(startVert, goalVert):
     # startVert = input("Enter start vertice (in range between 0 and 155): ")
     # goalVert = input("Enter goal vertice (in range between 0 and 155): ")
     dictOfNodes, listOfKeys, graph = dataInitialize()
+    for i in range(len(listOfKeys)):
+        if startVert == listOfKeys[i]:
+            startVert = i
+        if goalVert == listOfKeys[i]:
+            goalVert = i
+    print(startVert)
+    print(goalVert)
     route = AStarRoute(graph,startVert,goalVert)
     listOfRoute = []
     result = []
