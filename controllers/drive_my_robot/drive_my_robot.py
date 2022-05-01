@@ -4,6 +4,7 @@
 #  from controller import Robot, Motor, DistanceSensor
 from controller import Robot,Lidar
 import math
+import my_controller.routeFinding
 
 robot = Robot()
 TIME_STEP = 64

@@ -4,13 +4,7 @@ import math
 from FoxQueue import Queue, PriorityQueue
 from FoxStack import Stack
 
-
-def calculateDistance(x1,y1,x2,y2):
-    dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-    return dist
-
-def dataInitialize():
-    dictOfNodes = {"road_299B_01":(47.6,-14.9),"room_200":(58,-16.3), "room_206":(58,-24.9),"road_299B_02":(41.8,-14.9),"road_209":(41.9,-28.2),"road_299B_03":(13.6,-14.9),"room_277":(11.8,-17.6),"room_275":(13.9,-17.6),"room_277_&_275":(12.8,-21.1),"room_262_&_277":(7.19,-25.8),
+dictOfNodes = {"road_299B_01":(47.6,-14.9),"room_200":(58,-16.3), "room_206":(58,-24.9),"road_299B_02":(41.8,-14.9),"road_209":(41.9,-28.2),"road_299B_03":(13.6,-14.9),"room_277":(11.8,-17.6),"room_275":(13.9,-17.6),"room_277_&_275":(12.8,-21.1),"room_262_&_277":(7.19,-25.8),
     "room_263_&_275":(22.3,-25.8),"room_275B":(25.2,-24.6),"room_275A_01":(25.2,-18.8),"room_275A_02":(29.6,-18.8),"room_264_&_273":(30.2,-25.7),"room_264":(29.9,-32.1),"room_273":(30.4,-15.3),"room_271A":(33,-15.3),"room_271":(37.3,-15.3),"room_263":(23.8,-32.2),"road_299B_04":(1.5,-14.9),
     "road_299B_05":(-14.5,-14.9),"room_207":(47.6,-12.6),"room_270_01":(39,-14.9),"room_270_02":(27.4,-14.9),"room_272":(22.1,-14.9),"room_276_01":(9.09,-14.9),"room_287":(-1.25,-14.9),"road_299B_06":(-7.18,-14.9),"room_288":(-7.18,-18.1),"room_288A":(-9.41,-18.1),"room_288B":(-4.66,-18.1),
     "room_289_01":(-7.03,-21.2),"room_289_02":(-13.4,-21.2),"room_289_03":(-0.17,-21.2),"room_289_&_260":(-3.27,-27.6),"room_260":(0.16,-30.6),"room_262":(3.55,-30.6),"road_299c_01":(1.87,-30.6),"road_299c_02":(1.52,-21.2),"road_299c_03":(1.87,-33.2),"room_210":(1.87,-35.5),"room_211":(3.8,-35.5),
@@ -26,7 +20,12 @@ def dataInitialize():
     "road_298_03":(13.7,2.14),"road_298_04":(13.7,-2.54),"room_274B":(13.7,-5.23),"room_274A":(13.7,-8.83),"room_274":(13.7,-11.3),"road_299A_03":(-14.5,-5.61),"road_299A_04":(-14.5,-21.1),"road_299A_05":(14.5,-32.7),"road_299A_06":(-12,-32.7),"room_290":(-12,-30.7),"room_299":(-12,-34),"room_261":(-1.34,-33),
     "room_285_02":(-12.9,-2.21),"room_285_&_280":(-1.01,-4.02),"room_287_&_280":(-1.01,-7.71),"room_287_01":(-0.24,-8.79),"room_276_02":(3.52,-8.79),"room_287_02":(-12.9,-8.79),"room_280":(-12.9,-5.8)}
 
-    
+def calculateDistance(x1,y1,x2,y2):
+    dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return dist
+
+def dataInitialize():
+
     listOfKeys = []
     for i in dictOfNodes.keys():
         listOfKeys.append(i)
@@ -919,7 +918,8 @@ def heuristicDist(startVert, goalVert):
     (x2,y2) = dictOfNodes.get(listOfKeys[int(goalVert)])
     return calculateDistance(x1,y1,x2,y2)
 
-
+def getNodes():
+    return dictOfNodes
 
 def AStarRoute(graph, startVert, goalVert):
     startVert = int(startVert)
@@ -937,22 +937,22 @@ def AStarRoute(graph, startVert, goalVert):
         if nextVert not in visited:
             visited.add(nextVert)
             pred[nextVert] = previous
-            print("--------------")
-            print("Next vertex from queue:", nextVert, "  fCost =", fCost, "  g = ", nextGCost)
+            # print("--------------")
+            # print("Next vertex from queue:", nextVert, "  fCost =", fCost, "  g = ", nextGCost)
             if nextVert == goalVert:
                 return reconstructPath(startVert, goalVert, pred)
             neighbors = graph.getNeighbors(int(nextVert))
-            print("  Adding neighbors to to queue...")
+            # print("  Adding neighbors to to queue...")
             for n in neighbors:
                 neighNode = n[0]
                 edgeCost = n[1]
                 if neighNode not in visited:
                     gCost = nextGCost + edgeCost
                     hCost = heuristicDist(startVert, goalVert)
-                    print("    Node", neighNode, "From", nextVert)
-                    print("    G cost =", gCost, 'H cost =', hCost, "F cost = ", gCost + hCost)
+                    # print("    Node", neighNode, "From", nextVert)
+                    # print("    G cost =", gCost, 'H cost =', hCost, "F cost = ", gCost + hCost)
                     q.insert((neighNode, nextVert, gCost), gCost + hCost)
-    print(visited)
+    # print(visited)
     return [] # "NO PATH"
 
 if __name__=="__main__":
@@ -960,11 +960,20 @@ if __name__=="__main__":
     startVert = input("Enter start vertice (in range between 0 and 155): ")
     goalVert = input("Enter goal vertice (in range between 0 and 155): ")
     dictOfNodes, listOfKeys, graph = dataInitialize()
+    for i in range(len(listOfKeys)):
+        if startVert == listOfKeys[i]:
+            startVert = i
+        if goalVert == listOfKeys[i]:
+            goalVert = i
+    print(startVert)
+    print(goalVert)
     route = AStarRoute(graph,startVert,goalVert)
     listOfRoute = []
+    result = []
     for i in route:
         listOfRoute.append(listOfKeys[i])
-    print(listOfRoute)
+        result.append(dictOfNodes.get(listOfKeys[i]))
+    return listOfRoute, result
     
 
     
