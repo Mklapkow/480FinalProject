@@ -3,7 +3,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.576729011522743 -0.5714836225669339 -0.5837723155527109 4.206290253583924
-  position 1.6055651054025937 -8.550241644852669 87.92322191273989
+  position 51.97856315997454 -21.065554076639586 5.6570200253963066
   follow "four_wheeled_robot"
 }
 TexturedBackground {
@@ -7130,84 +7130,6 @@ DEF Group_nodes Group {
       name "solid(294)"
     }
   ]
-}
-Robot {
-  translation 55.1866 -17.3354 0.800124
-  rotation 0.9999847095567778 0.0009994967066661135 -0.005438902369070145 0.028852865724591604
-  children [
-    DEF Body Transform {
-      translation 0 0 0.0415
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 0 1
-            roughness 1
-            metalness 0
-          }
-          geometry Cylinder {
-            height 0.08
-            radius 0.045
-          }
-        }
-      ]
-    }
-    HingeJoint {
-      jointParameters HingeJointParameters {
-        position -1.4274146309389835e-09
-        anchor 0.045 0 0.025
-      }
-      device [
-        RotationalMotor {
-          name "motor_1"
-        }
-      ]
-      endPoint Solid {
-        translation 0.04500004522150625 1.7946439953068654e-06 0.025003414625117043
-        rotation 0.011836771929204532 -0.9998599900201568 0.011827560491835823 4.713048820435557
-        children [
-          DEF wheel Shape {
-            appearance PBRAppearance {
-              baseColor 1 0 0
-              roughness 1
-              metalness 0
-            }
-            geometry Cylinder {
-              height 0.01
-              radius 0.025
-            }
-          }
-        ]
-        boundingObject USE wheel
-        physics DEF wheel_physics Physics {
-        }
-      }
-    }
-    HingeJoint {
-      jointParameters HingeJointParameters {
-        position -1.4524141884236403e-09
-        anchor -0.045 0 0.025
-      }
-      device [
-        RotationalMotor {
-          name "motor_2"
-        }
-      ]
-      endPoint Solid {
-        translation -0.044999954812926055 2.2809739420057446e-06 0.025003081195355815
-        rotation 0.011836771311425054 -0.9998599900337789 0.011827559958528602 4.7130488203675185
-        children [
-          USE wheel
-        ]
-        name "solid(1)"
-        boundingObject USE wheel
-        physics USE wheel_physics
-      }
-    }
-  ]
-  boundingObject USE Body
-  physics Physics {
-  }
-  controller "my_controller"
 }
 Robot {
   translation 51.9815 -20.8656 0.79
