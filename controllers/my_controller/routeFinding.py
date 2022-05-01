@@ -958,16 +958,17 @@ def AStarRoute(graph, startVert, goalVert):
 
 
 
-if __name__=="__main__":
-    
-    startVert = input("Enter start vertice (in range between 0 and 155): ")
-    goalVert = input("Enter goal vertice (in range between 0 and 155): ")
+def pathFinder(self, startVert, goalVert):
+    # startVert = input("Enter start vertice (in range between 0 and 155): ")
+    # goalVert = input("Enter goal vertice (in range between 0 and 155): ")
     dictOfNodes, listOfKeys, graph = dataInitialize()
     route = AStarRoute(graph,startVert,goalVert)
     listOfRoute = []
+    result = []
     for i in route:
         listOfRoute.append(listOfKeys[i])
-    print(listOfRoute)
+        result.append(dictOfNodes.get(listOfKeys[i]))
+    return listOfRoute, result
     
 
     
