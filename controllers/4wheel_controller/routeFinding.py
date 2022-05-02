@@ -42,7 +42,7 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("road_299A_01")
     x2,y2 = dictOfNodes.get("room_284")
-    graph.addEdge(131,132,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(130,132,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298A_01")
     x2,y2 = dictOfNodes.get("road_299A_02")
@@ -50,83 +50,84 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("road_298A_01")
     x2,y2 = dictOfNodes.get("room_283_02")
-    graph.addEdge(125,134,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(124,134,calculateDistance(x1,y1,x2,y2))
 
+    
     x1,y1 = dictOfNodes.get("road_298A_01")
     x2,y2 = dictOfNodes.get("road_299B_01")
     graph.addEdge(0,134,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298_02")
     x2,y2 = dictOfNodes.get("road_299B_01")
-    graph.addEdge(0,136,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(0,135,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298_02")
     x2,y2 = dictOfNodes.get("room_283_01")
-    graph.addEdge(124,136,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(123,135,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298_02")
     x2,y2 = dictOfNodes.get("room_282")
-    graph.addEdge(123,136,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(123,122,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_283_01")
     x2,y2 = dictOfNodes.get("room_283_02")
-    graph.addEdge(125,124,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(123,124,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_284")
     x2,y2 = dictOfNodes.get("room_283_&_284")
-    graph.addEdge(130,131,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(130,129,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_284")
     x2,y2 = dictOfNodes.get("room_284_&_285")
-    graph.addEdge(129,131,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(130,128,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_285_01")
     x2,y2 = dictOfNodes.get("room_284_&_285")
-    graph.addEdge(128,129,calculateDistance(x1,y1,x2,y2))
-
-    x1,y1 = dictOfNodes.get("room_285_01")
-    x2,y2 = dictOfNodes.get("room_278A")
     graph.addEdge(127,128,calculateDistance(x1,y1,x2,y2))
 
-    x1,y1 = dictOfNodes.get("room_281_02")
+    x1,y1 = dictOfNodes.get("room_285_01")
     x2,y2 = dictOfNodes.get("room_278A")
     graph.addEdge(127,126,calculateDistance(x1,y1,x2,y2))
 
+    x1,y1 = dictOfNodes.get("room_281_02")
+    x2,y2 = dictOfNodes.get("room_278A")
+    graph.addEdge(125,126,calculateDistance(x1,y1,x2,y2))
+
     x1,y1 = dictOfNodes.get("room_285_01")
     x2,y2 = dictOfNodes.get("room_281_02")
-    graph.addEdge(126,128,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(127,125,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_281_01")
     x2,y2 = dictOfNodes.get("room_281_02")
-    graph.addEdge(122,126,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(121,125,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_281_01")
     x2,y2 = dictOfNodes.get("road_298_03")
-    graph.addEdge(122,137,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(121,136,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298_02")
     x2,y2 = dictOfNodes.get("road_298_03")
-    graph.addEdge(136,137,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(135,136,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_285_02")
     x2,y2 = dictOfNodes.get("room_285_01")
-    graph.addEdge(128,149,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(127,148,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299A_01")
     x2,y2 = dictOfNodes.get("road_299A_03")
-    graph.addEdge(132,142,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(131,141,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_285_02")
     x2,y2 = dictOfNodes.get("road_299A_03")
-    graph.addEdge(149,142,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(148,141,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_280")
     x2,y2 = dictOfNodes.get("road_299A_03")
-    graph.addEdge(155,142,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(155,141,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_02")
     x2,y2 = dictOfNodes.get("road_299A_03")
-    graph.addEdge(154,142,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(154,141,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_02")
     x2,y2 = dictOfNodes.get("room_280")
@@ -134,63 +135,63 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_285_02")
     x2,y2 = dictOfNodes.get("room_280")
-    graph.addEdge(149,155,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(148,155,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_285_02")
     x2,y2 = dictOfNodes.get("room_285_&_280")
-    graph.addEdge(150,149,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(148,149,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_&_280")
     x2,y2 = dictOfNodes.get("room_285_&_280")
-    graph.addEdge(150,151,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(150,149,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_280")
     x2,y2 = dictOfNodes.get("room_285_&_280")
-    graph.addEdge(155,150,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(155,149,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_280")
     x2,y2 = dictOfNodes.get("room_287_&_280")
-    graph.addEdge(155,151,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(155,150,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_02")
     x2,y2 = dictOfNodes.get("room_287_&_280")
-    graph.addEdge(154,151,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(154,150,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_01")
     x2,y2 = dictOfNodes.get("room_287_&_280")
-    graph.addEdge(151,152,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(151,150,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_01")
     x2,y2 = dictOfNodes.get("room_287_02")
-    graph.addEdge(152,154,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(151,154,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_287_01")
     x2,y2 = dictOfNodes.get("road_299C_04")
-    graph.addEdge(152,118,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(151,117,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_278")
     x2,y2 = dictOfNodes.get("road_299C_04")
-    graph.addEdge(119,118,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(118,117,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_276_02")
     x2,y2 = dictOfNodes.get("road_299C_04")
-    graph.addEdge(153,118,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(153,117,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_276_02")
     x2,y2 = dictOfNodes.get("road_299C_04")
-    graph.addEdge(153,118,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(153,117,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_278")
     x2,y2 = dictOfNodes.get("room_278A")
-    graph.addEdge(127,119,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(126,118,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_278")
     x2,y2 = dictOfNodes.get("room_280_01")
-    graph.addEdge(120,119,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(126,119,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_281_02")
     x2,y2 = dictOfNodes.get("room_281_01")
-    graph.addEdge(122,126,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(121,125,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298_03")
     x2,y2 = dictOfNodes.get("room_281_01")
@@ -198,35 +199,35 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("road_298_03")
     x2,y2 = dictOfNodes.get("road_298_02")
-    graph.addEdge(136,137,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(135,136,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_298_03")
     x2,y2 = dictOfNodes.get("road_298_04")
-    graph.addEdge(137,138,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(136,137,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_280_02")
     x2,y2 = dictOfNodes.get("road_298_04")
-    graph.addEdge(121,138,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(120,137,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_280_02")
     x2,y2 = dictOfNodes.get("room_280_01")
-    graph.addEdge(120,121,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(120,119,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_274B")
     x2,y2 = dictOfNodes.get("road_298_04")
-    graph.addEdge(138,139,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(138,137,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_274B")
     x2,y2 = dictOfNodes.get("room_274A")
-    graph.addEdge(139,140,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(138,139,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_274")
     x2,y2 = dictOfNodes.get("room_274A")
-    graph.addEdge(140,141,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(140,139,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_274")
     x2,y2 = dictOfNodes.get("road_299B_03")
-    graph.addEdge(141,5,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(140,5,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299A_03")
     x2,y2 = dictOfNodes.get("road_299B_05")
@@ -234,15 +235,15 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_287_01")
     x2,y2 = dictOfNodes.get("room_287_02")
-    graph.addEdge(152,154,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(151,154,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299B_04")
     x2,y2 = dictOfNodes.get("road_299C_04")
-    graph.addEdge(20,118,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(20,117,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_276_02")
     x2,y2 = dictOfNodes.get("room_276_01")
-    graph.addEdge(26,153,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(26,152,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299B_05")
     x2,y2 = dictOfNodes.get("road_299B_06")
@@ -266,7 +267,7 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_287_01")
     x2,y2 = dictOfNodes.get("room_287")
-    graph.addEdge(27,152,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(27,151,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299B_06")
     x2,y2 = dictOfNodes.get("room_288")
@@ -286,11 +287,11 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("road_299B_05")
     x2,y2 = dictOfNodes.get("road_299A_04")
-    graph.addEdge(21,143,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(21,142,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_289_02")
     x2,y2 = dictOfNodes.get("road_299A_04")
-    graph.addEdge(33,143,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(33,142,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_289_02")
     x2,y2 = dictOfNodes.get("room_289_01")
@@ -298,7 +299,7 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_289_01")
     x2,y2 = dictOfNodes.get("room_289_03")
-    graph.addEdge(33,32,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(34,32,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_289_01")
     x2,y2 = dictOfNodes.get("room_289_&_260")
@@ -310,27 +311,27 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("road_299A_05")
     x2,y2 = dictOfNodes.get("road_299A_04")
-    graph.addEdge(143,144,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(143,142,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299A_05")
     x2,y2 = dictOfNodes.get("road_299A_06")
-    graph.addEdge(144,145,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(143,144,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_299")
     x2,y2 = dictOfNodes.get("road_299A_06")
-    graph.addEdge(147,145,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(146,144,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_290")
     x2,y2 = dictOfNodes.get("road_299A_06")
-    graph.addEdge(145,146,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(145,144,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_261")
     x2,y2 = dictOfNodes.get("road_299A_06")
-    graph.addEdge(148,145,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(147,144,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299c_03")
     x2,y2 = dictOfNodes.get("room_261")
-    graph.addEdge(148,40,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(147,40,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_299c_01")
     x2,y2 = dictOfNodes.get("road_299c_03")
@@ -442,7 +443,7 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_263")
     x2,y2 = dictOfNodes.get("room_216")
-    graph.addEdge(19,47,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(19,46,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_216")
     x2,y2 = dictOfNodes.get("room_217")
@@ -582,27 +583,27 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_200")
     x2,y2 = dictOfNodes.get("road_297A_12")
-    graph.addEdge(1,112,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(1,111,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_206")
     x2,y2 = dictOfNodes.get("road_297A_12")
-    graph.addEdge(2,112,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(2,111,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_206")
     x2,y2 = dictOfNodes.get("road_297A_08")
-    graph.addEdge(2,91,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(2,90,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_297A_08")
     x2,y2 = dictOfNodes.get("room_208")
-    graph.addEdge(91,93,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(90,93,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_297A_08")
     x2,y2 = dictOfNodes.get("room_205_03")
-    graph.addEdge(91,92,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(90,92,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_297A_12")
     x2,y2 = dictOfNodes.get("room_205_03")
-    graph.addEdge(112,92,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(111,92,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_206")
     x2,y2 = dictOfNodes.get("room_205_03")
@@ -614,7 +615,7 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("room_200")
     x2,y2 = dictOfNodes.get("road_297A_08")
-    graph.addEdge(1,91,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(1,90,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("room_222_02")
     x2,y2 = dictOfNodes.get("room_223")
@@ -746,7 +747,7 @@ def dataInitialize():
 
     x1,y1 = dictOfNodes.get("road_297A_07")
     x2,y2 = dictOfNodes.get("road_297A_08")
-    graph.addEdge(91,89,calculateDistance(x1,y1,x2,y2))
+    graph.addEdge(91,90,calculateDistance(x1,y1,x2,y2))
 
     x1,y1 = dictOfNodes.get("road_297B_03")
     x2,y2 = dictOfNodes.get("road_297B_04")
@@ -955,17 +956,19 @@ def AStarRoute(graph, startVert, goalVert):
     # print(visited)
     return [] # "NO PATH"
 
-if __name__=="__main__":
-    
-    startVert = input("Enter start vertice (in range between 0 and 155): ")
-    goalVert = input("Enter goal vertice (in range between 0 and 155): ")
+
+
+def pathFinder(startVert, goalVert):
+    # startVert = input("Enter start vertice (in range between 0 and 155): ")
+    # goalVert = input("Enter goal vertice (in range between 0 and 155): ")
+    print(goalVert)
     dictOfNodes, listOfKeys, graph = dataInitialize()
     for i in range(len(listOfKeys)):
         if startVert == listOfKeys[i]:
             startVert = i
         if goalVert == listOfKeys[i]:
             goalVert = i
-    print(startVert)
+
     print(goalVert)
     route = AStarRoute(graph,startVert,goalVert)
     listOfRoute = []
