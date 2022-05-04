@@ -961,7 +961,6 @@ def AStarRoute(graph, startVert, goalVert):
 def pathFinder(startVert, goalVert):
     # startVert = input("Enter start vertice (in range between 0 and 155): ")
     # goalVert = input("Enter goal vertice (in range between 0 and 155): ")
-    print(goalVert)
     dictOfNodes, listOfKeys, graph = dataInitialize()
     for i in range(len(listOfKeys)):
         if startVert == listOfKeys[i]:
@@ -969,7 +968,6 @@ def pathFinder(startVert, goalVert):
         if goalVert == listOfKeys[i]:
             goalVert = i
 
-    print(goalVert)
     route = AStarRoute(graph,startVert,goalVert)
     listOfRoute = []
     result = []

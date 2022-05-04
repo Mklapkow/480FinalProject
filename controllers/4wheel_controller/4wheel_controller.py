@@ -22,14 +22,14 @@ def angleBetweenTwoPoints(curr, target):
 
 def moveToNextNode(turnAngle, target):
     if turnAngle >= 2.5:
-        leftSpeed = -3.0
-        rightSpeed = 3.0
-    elif turnAngle <= -2.5:
         leftSpeed = 3.0
         rightSpeed = -3.0
+    elif turnAngle <= -2.5:
+        leftSpeed = -3.0
+        rightSpeed = 3.0
     elif abs(gps.getValues()[0] - target[0]) >= 0.5 or abs(gps.getValues()[1] - target[1]) >= 0.5:
-        leftSpeed = 5.0
-        rightSpeed = 5.0
+        leftSpeed = 7.0
+        rightSpeed = 7.0
     else:
         leftSpeed = 0
         rightSpeed = 0
@@ -55,35 +55,36 @@ def firstMove(goal):
     curr = findCoord()
     firstNode = nearestNode(curr)
     target = rf.dictOfNodes.get(firstNode)
-
-    while abs(gps.getValues()[0] - target[0]) > 0.5 or abs(gps.getValues()[1] - target[1]) > 0.5:
+    distance = math.sqrt((curr[0] - target[0])**2 + (curr[1] - target[1])**2)
+    count = 0
+    while count * 0.041117216 <= distance :
         robot.step(TIME_STEP)
+        count += 1
         newBearing = findBearing()
-        curr = findCoord()
-
+        curr = (curr[0] + count * 0.041117216 * math.cos(newBearing), curr[1] - count * 0.041117216 * math.sin(newBearing))
+        print(newBearing)
         degreeAngle = angleBetweenTwoPoints(curr, target)
     
         turnAngle = newBearing - degreeAngle
 
         moveToNextNode(turnAngle, target)
         
+    
     followPath(firstNode, goal)
-
 
 def followPath(firstNode, goal):
     path = rf.pathFinder(firstNode, goal)
-    print(path)
     for target in path[1]:
-        print(target)
-        print(rf.dictOfNodes.get(firstNode))
         if target != rf.dictOfNodes.get(firstNode):
-            print(abs(gps.getValues()[0] - target[0]))
-            print(abs(gps.getValues()[1] - target[1]))
-            while abs(gps.getValues()[0] - target[0]) > 0.5 or abs(gps.getValues()[1] - target[1]) > 0.5:
+            curr = findCoord()
+            distance = math.sqrt((curr[0] - target[0])**2 + (curr[1] - target[1])**2)
+            count = 0
+            while count * 0.041117216 <= distance :
                 robot.step(TIME_STEP)
+                count += 1
                 newBearing = findBearing()
-                curr = findCoord()
-    
+                curr = (curr[0] + count * 0.041117216 * math.cos(newBearing), curr[1] - count * 0.041117216 * math.sin(newBearing))
+                print(newBearing)
                 degreeAngle = angleBetweenTwoPoints(curr, target)
             
                 turnAngle = newBearing - degreeAngle
@@ -95,6 +96,7 @@ def followPath(firstNode, goal):
         wheels[1].setVelocity(rightSpeed)
         wheels[2].setVelocity(leftSpeed)
         wheels[3].setVelocity(rightSpeed)
+    print("Not lost anymore!")
     
       
             
@@ -119,6 +121,6 @@ if __name__=="__main__":
     gps = ds[2]
     compass = ds[3]
     robot.step(TIME_STEP)
-    goal = "room_270_02"
+    goal = "room_260"
     firstNode = firstMove(goal)
 

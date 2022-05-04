@@ -3,7 +3,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.576729011522743 -0.5714836225669339 -0.5837723155527109 4.206290253583924
-  position 51.79443726231062 -21.495508888103803 25.908312909055404
+  position 51.82550561393566 -21.422960770566153 22.491225491404432
   follow "four_wheeled_robot"
 }
 TexturedBackground {
@@ -7132,7 +7132,7 @@ DEF Group_nodes Group {
   ]
 }
 Robot {
-  translation 51.9515 -20.4156 0.79
+  translation 58.7115 -20.9756 0.79
   rotation 0 0 1 -1.5707953071795862
   scale 5 5 5
   children [
